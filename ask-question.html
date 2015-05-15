@@ -1,0 +1,241 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Ask Question</title>
+	
+    <!-- BOOTSTRAP STYLE SHEET -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT-AWESOME STYLE SHEET FOR BEAUTIFUL ICONS -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+	<!-- CUSTOM STYLE CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" />
+	<!-- TAGSINPUT STYLE CSS -->
+	<link href="assets/css/bootstrap-tagsinput.min.css" rel="stylesheet" />
+	
+</head>
+<body>
+    <div class="navbar navbar-default navbar-static-top">
+        <div class="container">
+			<div class="col-md-12">
+				<div class="col-md-2">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href=""><img src="assets/img/qa_logo.jpg" alt="Q & A"></a>
+					</div>
+				</div>
+				<div class="col-md-10">
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav ">
+							<li><a href="#">HOME</a></li>
+							<li><a href="#"class="active">Ask Question</a></li>
+							<li><a href="#">Question</a></li>
+							<li><a href="#">User</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+					</div>
+					<div class="contact">
+						<ul>
+							<li><i class="fa fa-envelope-o"></i><a href="#">Contact</a></li>
+							<li><i class="fa fa-phone"></i><a href="#">Support</a></li>
+							<li><i class="fa fa-user"></i><a href="#">Signout</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+	<div class="btn-group btn-breadcrumb">
+		 <div class="container">
+            <a href="#">Home</a>
+            <a href="#">User</a>
+            <a class="link" href="#">Ask Question</a>
+        </div>
+	</div>
+    <!-- NAVBAR CODE END -->
+
+
+    <div class="container">
+        <section>
+            <div class="row">
+				<div class="col-md-4" id="about-admin">
+                    <div class="alert alert-info">
+						<h3>My Profile<span><a href="">Edit Profile</a></span></h3>
+						<div class="col-md-4">
+							<img src="assets/img/admin.jpg" class="img-rounded img-responsive" alt="Picture"/>
+							<h5>User Name</h5>
+						</div>
+						<div class="col-md-8">
+							<ul class="q_list">
+								<li>No of question asked<span>21</span></li>
+								<li>No of question responded<span>29</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="alert alert-info">
+						<h3>Stats</h3>
+						<ul class="stats">
+							<li><i class="fa fa-question-circle"></i>Question<span>(10)</span></li>
+							<li><i class="fa fa-comment"></i>Answer<span>(30)</span></li>
+						</ul>
+					</div>
+					<div class="alert alert-info">
+						<h3>Tags</h3>
+						<ul class="tags">
+							<li><a href="">Project</a></li>
+							<li><a href="">Portfolio</a></li>
+							<li><a href="">UI</a></li>
+							<li><a href="">HTML</a></li>
+						</ul>
+						<ul class="tags">
+							<li><a href="">Project</a></li>
+							<li><a href="">Portfolio</a></li>
+							<li><a href="">UI</a></li>
+							<li><a href="">HTML</a></li>
+						</ul>
+					</div>
+				</div>
+                <div class="col-md-8">
+					<div class="col-md-12" id="about-admin">
+						<div class="alert alert-info">
+							<h2>Ask Question</h2>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+							<form class="ask ">
+								<div class=" col-md-12">
+									<label for="title" class="col-sm-3">Question Title <i class="fa fa-asterisk"></i></label>
+									<div class="col-sm-8">
+									  <input type="text" class="form-control col-sm-4" id="title" placeholder="Question Title">
+									</div>
+								</div>
+								<div class=" col-md-12">
+									<label for="tags" class="col-sm-3">Tags <i class="fa fa-asterisk"></i></label>
+									<div class="col-sm-8">
+									  <input type="text" class="form-control col-sm-4" id="tags" data-role="tagsinput" value="Tag1">
+									</div>
+								</div>
+								<div class=" col-md-12">
+									<label for="category" class="col-sm-3">Category <i class="fa fa-asterisk"></i></label>
+									<div class="col-sm-8 dropdown">
+										<select class="form-control">
+											<option>Select a Category</option>
+										</select>
+										<em>Lorep Ipsum is simply dummy text</em>
+									</div>
+									<br/>
+								</div>
+								<div class=" col-md-12">
+									<label for="Poll" class="col-sm-3">Poll</label>
+									<div class="col-sm-4">
+									  <input type="checkbox" id="Poll" placeholder="Poll"> This question is a poll?</input>
+									</div>
+									<div class="col-sm-5">Lorep Ipsum is simply dummy text</div>
+								</div>
+								<div class=" col-md-12">
+									<label for="attach" class="col-sm-3">Attachment</label>
+									<div class="col-sm-8">
+									  <input type="file" class="form-control col-sm-4" id="attach" placeholder="Select File">
+									</div>
+								</div>
+								<div class=" col-md-12">
+									<label for="details" class="col-sm-3">Details <i class="fa fa-asterisk"></i></label>
+									<div class="col-sm-8">
+									  <textarea class="form-control col-sm-4" id="details" placeholder="Input Description" style="height:100px"></textarea>
+									</div>
+								</div>
+								
+								<div class=" col-md-12">
+									<button class="btn btn-default" id="submit">Publish Your Question</button>
+								</div>
+								
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+            <!-- ROW END -->
+        </section>
+        <!-- SECTION END -->
+    </div>
+	<footer>
+		<div class="container">
+			<div class="col-md-4">
+				<div class="footer-box">
+					<h3>Recent Question</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+				</div>
+				<h3>Address</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing</p>
+			</div>
+			<div class="col-md-4">
+				<div class="footer-box" id="second">
+					<h3>Quick Links</h3>
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">Ask Question</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">User</a></li>
+						<li><a href="">Blog</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="footer-box">
+					<h3>Popular Question</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="copyright">
+		<div class="container">
+			<h5>copyright@ 2015 Q&A </h5>
+			<span>
+				<a href="#" class="btn btn-social">
+					<i class="fa fa-facebook fa-2X"></i>
+				</a>
+				<a href="#" class="btn btn-social">
+					<i class="fa fa-pinterest fa-2X"></i>
+				</a>
+				<a href="#" class="btn btn-social">
+					<i class="fa fa-skype fa-2X"></i>
+				</a>
+				<a href="#" class="btn btn-social">
+					<i class="fa fa-twitter fa-2X"></i>
+				</a>
+				<a href="#" class="btn btn-social">
+					<i class="fa fa-vine fa-2X"></i>
+				</a>
+				<a href="#" class="btn btn-social">
+					<i class="fa fa-stumbleupon fa-2X"></i>
+				</a>
+				<a href="#" class="btn btn-social">
+					<i class="fa fa-vk fa-2X"></i></a>
+				<a href="#" class="btn btn-social">
+					<i class="fa fa-youtube-square fa-2X"></i>
+				</a>
+			</span>
+		</div>
+	</div>
+    <!-- CONATINER END -->
+
+    <!-- REQUIRED SCRIPTS FILES -->
+    <!-- CORE JQUERY FILE -->
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <!-- REQUIRED BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.js"></script>
+	<!-- REQUIRED BOOTSTRAP TAGINPUT SCRIPTS -->
+	<script src="assets/js/bootstrap-tagsinput.min.js"></script>
+	<!-- REQUIRED BOOTSTRAP FILEINPUT SCRIPTS -->
+	<script src="assets/js/bootstrap-filestyle.min.js"></script>
+</body>
+
+</html>
