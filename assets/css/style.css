@@ -283,6 +283,28 @@ background: #e06666;
 }
 
 
+//Nicks CSS
+
+
+.container .q-btn-home{
+	background: #e06666;
+    border: 2px solid #000000;
+    box-shadow: 2px 3px 1px #000000;
+    color: #ffffff;
+    display: inline;
+    padding: 5px 25px;
+}
+
+.container .r-btn-home{
+	background: grey;
+    border: 2px solid #000000;
+    box-shadow: 2px 3px 1px #000000;
+    color: #ffffff;
+    display: inline;
+    padding: 5px 25px;
+}
+
+
 .long-botton {
     display:block;
     width:100%
@@ -296,11 +318,15 @@ background: #e06666;
     border-radius:0!important
 }
 
-.theme-form {
+.question .theme-form {
     border:2px solid #000
 }
 
-.theme-button {
+.modal .theme-form {
+    border:2px solid #000
+}
+
+.container .theme-button {
     background:#333;
     border:2px solid #000;
     color:#fff;
@@ -310,16 +336,139 @@ background: #e06666;
     box-shadow:2px 3px 1px #000
 }
 
+.container .theme-button-head {
+    background:#333;
+    border:2px solid #000;
+    color:#fff;
+    display:inline;
+    margin:0 5px;
+    padding:11px 10px;
+    box-shadow:2px 1px 1px #000
+}
+
 .theme-button-white {
     background:#fff;
     border:2px solid #000;
     color:#000;
     display:inline;
-    margin:0 5px;
+    margin:0;
     padding:5px 10px;
     box-shadow:2px 3px 1px #000
 }
 
+.login{
+padding:50px
+}
+
+.login hr{
+border-bottom:2px solid black
+}
+
+.modal-header{
+
+color:#c4484d;
+}
+
+  .theme-button-white{
+     
+     background: white;
+   	 border: 2px solid #000000;
+     color: black;
+    display: inline;
+    margin: 0px;
+    padding: 5px 10px;
+	box-shadow: 2px 3px 1px #000;
+	
+     }
+     
+     .modal .theme-button-red{
+     
+     background: #c4484d;
+   	 border: 2px solid #000000;
+     color: black;
+    display: inline;
+    margin: 0px;
+    padding: 5px 10px;
+	box-shadow: 2px 3px 1px #000;
+	
+     }
+     
+     .theme-button-red:active{
+     
+     background: #c4484d;
+   	 border: 2px solid #000000;
+     color: black;
+    display: inline;
+    margin: 0px;
+    padding: 5px 10px;
+	box-shadow: 2px 3px 1px #000;
+	
+     }
+     
+     
+     .theme-button-red{
+     
+     color:white;
+	
+     }
+     
+     
+     .theme-button-red:hover{
+     
+     background: #c4484d;
+   	 border: 2px solid #000000;
+     color: black;
+    display: inline;
+    margin: 0px;
+    padding: 5px 10px;
+	box-shadow: 2px 3px 1px #000;
+	
+     }
+     
+     .spacer{
+   	min-height:200px;
+     }
+     
+     .reg-height{
+     min-height:600px;
+     }
+     
+     .theme-button:active{
+     
+     background: #333333;
+   	 border: 2px solid #000000;
+     color: #ffffff;
+    display: inline;
+    margin: 0 5px;
+    padding: 5px 10px;
+	box-shadow: 2px 3px 1px #000;
+	
+     }
+     
+     .theme-button:hover{
+     
+     background: #525553;
+   	 border: 2px solid #000000;
+     color: #ffffff;
+    display: inline;
+    margin: 0 5px;
+    padding: 5px 10px;
+	box-shadow: 2px 3px 1px #000;
+	
+     }
+     
+     .theme-button:focus{
+     
+     background: #525553;
+   	 border: 2px solid #000000;
+     color: #ffffff;
+    display: inline;
+    margin: 0 5px;
+    padding: 5px 10px;
+	box-shadow: 2px 3px 1px #000;
+	
+     }
+     
 .theme-button:active {
     background:#333;
     border:2px solid #000;
@@ -354,8 +503,24 @@ background: #e06666;
     position:relative
 }
 
+.inner-addon-lg {
+    position:relative
+}
+
+.inner-addon-lg .glyphicon {
+    position:absolute;
+    padding:15px;
+    pointer-events:none
+}
+
 /* style icon */
 .inner-addon .glyphicon {
+    position:absolute;
+    padding:10px;
+    pointer-events:none
+}
+
+.inner-addon .button {
     position:absolute;
     padding:10px;
     pointer-events:none
@@ -379,6 +544,44 @@ background: #e06666;
     padding-right:30px
 }
 
+.question {
+    min-height:200px;
+    margin-bottom:30px;
+    border:2px solid #000;
+    position:relative
+}
+
+.container .home-nav {
+    border-bottom:2px solid #d65051
+}
+
+.home-nav a {
+    color:#000
+}
+
+
+.nav-tabs.nav-tabs > li.active > a,.nav-tabs > li.active > a:hover,.nav-tabs > li.active > a:focus {
+    color:#fff;
+    background-color:#d65051;
+    border:2px solid #d65051
+}
+
+.user-profile {
+    margin-right:10px
+}
+
+.question-list {
+    bottom:0;
+    border-bottom:none;
+    clear:all
+}
+
+a .active {
+    background-color:read
+}
+
+
+//END NICKS CSS
 @media screen and (max-width: 980px){
 	#second{
 		margin: 0;
