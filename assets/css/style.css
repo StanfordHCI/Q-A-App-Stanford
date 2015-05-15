@@ -201,7 +201,7 @@ footer {
     margin: 10px 0 0;
 }
 .edit .btn{
-background: #e06666;
+	background: #e06666;
     border: 2px solid #000000;
     box-shadow: 2px 3px 1px #000000;
     color: #ffffff;
@@ -283,7 +283,7 @@ background: #e06666;
 }
 
 
-//Nicks CSS
+/*Nicks CSS*/
 
 
 .container .q-btn-home{
@@ -544,6 +544,11 @@ color:#c4484d;
     padding-right:30px
 }
 
+
+.label {
+    line-height: 2 !important;
+}
+
 .question {
     min-height:200px;
     margin-bottom:30px;
@@ -581,7 +586,56 @@ a .active {
 }
 
 
-//END NICKS CSS
+/*END NICKS CSS*/
+
+
+/*Peter's CSS*/
+/*ask question begin*/
+.ask input, .ask textarea,.ask select {
+    border: 2px solid;
+    margin-bottom: 10px;
+    padding: 4px;
+}
+.ask div {
+    margin: 10px 0 ;
+	display:inline-block;
+	
+}
+.ask label {
+	margin: 13px 0 ;
+    text-align:left;
+	vertical-align:middle;
+	float: inherit;
+}
+.ask #submit {
+	background: #e06666;
+    border: 2px solid #000000;
+    box-shadow: 2px 3px 1px #000000;
+    color: #ffffff;
+    display: inline;
+    margin: 0 5px;
+    padding: 5px 10px;
+	width: 100%;
+	border-radius: 0;
+}
+.ask label i {
+	color: #f00;
+}
+.ask #dropdownCategory {
+	text-align: left;
+}
+
+.ask .dropdown-toggle  {
+	text-align: left;
+	margin-top: 8px;
+}
+.ask button span {
+	float:right;
+	margin-top: 8px;
+}
+/*ask question end*/
+
+
 @media screen and (max-width: 980px){
 	#second{
 		margin: 0;
