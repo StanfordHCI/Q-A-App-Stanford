@@ -634,7 +634,19 @@ a .active {
 	margin-top: 8px;
 }
 /*ask question end*/
-
+.reply {
+	float: right;
+	color: #f00;
+}
+.answer-list {
+	margin-left: 60px;
+}
+.pull-right  li{
+	padding-left:0px;
+}
+.pull-right li i {
+	padding-left:0px;
+}
 
 @media screen and (max-width: 980px){
 	#second{
