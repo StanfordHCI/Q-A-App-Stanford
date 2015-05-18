@@ -633,12 +633,24 @@ a .active {
 	float:right;
 	margin-top: 8px;
 }
-.bootstrap-tagsinput {
-	border-radius: 0;
-}
+
 @media screen and (min-width: 640px){
 	.answer-list {
 		margin-left: 60px;
+	}
+}
+@media screen and (max-width: 320px){
+	.ask div {
+	display: block;
+	}
+}
+@media screen and (max-width: 620px){
+	.media-body {
+		display:inline-block;
+	}
+	.media-body .col-md-12 , .col-md-1, .col-md-7 {
+		padding:0;
+		margin:0;
 	}
 }
 /*ask question end*/
