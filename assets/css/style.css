@@ -633,14 +633,20 @@ a .active {
 	float:right;
 	margin-top: 8px;
 }
+.bootstrap-tagsinput {
+	border-radius: 0;
+}
+@media screen and (min-width: 640px){
+	.answer-list {
+		margin-left: 60px;
+	}
+}
 /*ask question end*/
 .reply {
 	float: right;
 	color: #f00;
 }
-.answer-list {
-	margin-left: 60px;
-}
+
 .pull-right  li{
 	padding-left:0px;
 }
@@ -677,6 +683,7 @@ a .active {
 	margin-top: 14px;
 	line-height: 28px;
 }
+
 }
 
 @media screen and (max-width: 360px){
