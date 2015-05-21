@@ -1,718 +1,937 @@
-*{
-	margin: 0;
-	padding: 0;
+/* line 3, ../../scss/style.scss */
+* {
+  margin: 0;
+  padding: 0;
 }
-a,img{
-	text-decoration: none;
+
+/* line 7, ../../scss/style.scss */
+a, img {
+  text-decoration: none;
 }
+
+/* line 10, ../../scss/style.scss */
 .active {
-    background-color: #e06666;
-    color: #ffffff;
+  background-color: #e06666;
+  color: #ffffff;
 }
 
 /* View Profile */
-
+/* line 17, ../../scss/style.scss */
 #about-admin .alert {
-    width: 100%;
-	float: left;
-	margin-top: 50px;
-	color: #000;
+  width: 100%;
+  float: left;
+  margin-top: 50px;
+  color: #000;
 }
+
+/* line 23, ../../scss/style.scss */
 #about-admin h2 {
-    border-bottom: 2px solid #000;
-    font-size: 17px;
-    margin: 0 0 16px;
-    padding-bottom: 10px;
-	color: #666666;
-	font-size: 20px;
+  border-bottom: 2px solid #000;
+  font-size: 17px;
+  margin: 0 0 16px;
+  padding-bottom: 10px;
+  color: #666666;
+  font-size: 20px;
 }
+
+/* line 31, ../../scss/style.scss */
 #about-admin h3 {
-    border-bottom: 2px solid;
-    font-size: 17px;
-    margin: 0 0 16px;
-    padding-bottom: 10px;
-	color: #000;
+  border-bottom: 2px solid;
+  font-size: 17px;
+  margin: 0 0 16px;
+  padding-bottom: 10px;
+  color: #000;
 }
+
+/* line 38, ../../scss/style.scss */
 #about-admin h3 span {
-    color: #5e90e7;
-    float: right;
-    text-decoration: underline;
+  color: #5e90e7;
+  float: right;
+  text-decoration: underline;
 }
+
+/* line 43, ../../scss/style.scss */
 #about-admin .fa-user {
-    border: 2px solid;
-    border-radius: 56px;
-    color: #666666;
-    font-size: 48px;
-    padding: 15px 22px;
+  border: 2px solid;
+  border-radius: 56px;
+  color: #666666;
+  font-size: 48px;
+  padding: 15px 22px;
 }
+
+/* line 50, ../../scss/style.scss */
 .btn-social {
-            color: white;
-        }
+  color: white;
+}
 
-            .btn-social:hover {
-                color: white;
-                opacity: 1;
-                text-decoration: none;
-            }
+/* line 54, ../../scss/style.scss */
+.btn-social:hover {
+  color: white;
+  opacity: 1;
+  text-decoration: none;
+}
 
-        .btn-facebook, .btn-twitter, .btn-linkedin, .btn-google{
-            background: #e06666;
-        }
+/* line 60, ../../scss/style.scss */
+.btn-facebook, .btn-twitter, .btn-linkedin, .btn-google {
+  background: #e06666;
+}
+
+/* line 63, ../../scss/style.scss */
 .contact {
-    float: right;
-	margin-top: 14px;
+  float: right;
+  margin-top: 14px;
 }
+
+/* line 67, ../../scss/style.scss */
 .contact li, .btn-breadcrumb a {
-    display: inline;
-    list-style: none;
-	background: url('../img/li_bg.png') no-repeat center right;
-	padding: 0 8px;
-	color: #fff;
+  display: inline;
+  list-style: none;
+  background: url("../img/li_bg.png") no-repeat center right;
+  padding: 0 8px;
+  color: #fff;
 }
-.contact li:last-child, .btn-breadcrumb a:last-child{
-	background: none;
+
+/* line 74, ../../scss/style.scss */
+.contact li:last-child, .btn-breadcrumb a:last-child {
+  background: none;
 }
-.contact li  a{
-	color: #fff;
-	padding: 0 12px;
+
+/* line 77, ../../scss/style.scss */
+.contact li a {
+  color: #fff;
+  padding: 0 12px;
 }
-.contact li  a:hover{
-	text-decoration: none;
-	color: #e06666;
+
+/* line 81, ../../scss/style.scss */
+.contact li a:hover {
+  text-decoration: none;
+  color: #e06666;
 }
+
+/* line 85, ../../scss/style.scss */
 .btn-breadcrumb {
-    background: #e06666;
-    float: left;
-    padding: 18px 0;
-    width: 100%;
+  background: #e06666;
+  float: left;
+  padding: 18px 0;
+  width: 100%;
 }
-.btn-breadcrumb a:hover{
-	color: #fff;
-	text-decoration: none;
+
+/* line 91, ../../scss/style.scss */
+.btn-breadcrumb a:hover {
+  color: #fff;
+  text-decoration: none;
 }
-.link{
-	color: #000!important;
+
+/* line 95, ../../scss/style.scss */
+.link {
+  color: black !important;
 }
+
+/* line 98, ../../scss/style.scss */
 #about-admin img {
-    float: left;
+  float: left;
 }
+
+/* line 101, ../../scss/style.scss */
 .q_list li {
-    line-height: 29px;
-    list-style: none;
+  line-height: 29px;
+  list-style: none;
 }
+
+/* line 105, ../../scss/style.scss */
 .q_list span {
-    float: right;
-    font-weight: 700;
+  float: right;
+  font-weight: 700;
 }
+
+/* line 109, ../../scss/style.scss */
 .about-list li {
-    line-height: 32px;
-    list-style: none;
-	color: #6f7271;
+  line-height: 32px;
+  list-style: none;
+  color: #6f7271;
 }
+
+/* line 114, ../../scss/style.scss */
 .about-list i {
-    padding-right: 10px;
-	color: #000000;
+  padding-right: 10px;
+  color: #000000;
 }
+
+/* line 118, ../../scss/style.scss */
 #about-admin p {
-    float: left;
-    padding: 18px 0;
-    width: 100%;
+  float: left;
+  padding: 18px 0;
+  width: 100%;
 }
+
+/* line 123, ../../scss/style.scss */
 .stats li {
-    font-size: 18px;
-    line-height: 48px;
-    list-style: none;
+  font-size: 18px;
+  line-height: 48px;
+  list-style: none;
 }
+
+/* line 128, ../../scss/style.scss */
 .stats i {
-    font-size: 26px;
-    padding: 0 12px 0 0;
-	vertical-align: middle;
+  font-size: 26px;
+  padding: 0 12px 0 0;
+  vertical-align: middle;
 }
+
+/* line 133, ../../scss/style.scss */
 .stats span {
-    margin-left: 20px;
+  margin-left: 20px;
 }
-.tags{
-	width: 100%;
-	float: left;
-	margin: 12px 0 !important;
+
+/* line 136, ../../scss/style.scss */
+.tags {
+  width: 100%;
+  float: left;
+  margin: 12px 0 !important;
 }
+
+/* line 141, ../../scss/style.scss */
 .tags li {
-    background: #333333;
-    border: 2px solid #000000;
-    color: #ffffff;
-    display: inline;
-    margin: 0 5px;
-    padding: 5px 10px;
-	box-shadow: 2px 3px 1px #000;
+  background: #333333;
+  border: 2px solid #000000;
+  color: #ffffff;
+  display: inline;
+  margin: 0 5px;
+  padding: 5px 10px;
+  box-shadow: 2px 3px 1px #000;
 }
-.tags li  a{
-	color: #ffffff;
+
+/* line 150, ../../scss/style.scss */
+.tags li a {
+  color: #ffffff;
 }
-.table, tr, td{
-	border: 2px solid;
-	margin: 0!important;
+
+/* line 153, ../../scss/style.scss */
+.table, tr, td {
+  border: 2px solid;
+  margin: 0 !important;
 }
+
+/* line 157, ../../scss/style.scss */
 footer {
-    background: #999999;
-    border-bottom: 3px solid;
-    border-top: 3px solid;
-    padding: 15px 0 30px;
+  background: #999999;
+  border-bottom: 3px solid;
+  border-top: 3px solid;
+  padding: 15px 0 30px;
 }
+
+/* line 163, ../../scss/style.scss */
 .footer-box li {
-    font-size: 20px;
-    list-style: none;
+  font-size: 20px;
+  list-style: none;
 }
-.footer-box li a{
-	color:#000;
+
+/* line 167, ../../scss/style.scss */
+.footer-box li a {
+  color: #000;
 }
+
+/* line 170, ../../scss/style.scss */
 .footer-box li::before {
-    content: "-";
-    padding-right: 10px;
+  content: "-";
+  padding-right: 10px;
 }
+
+/* line 174, ../../scss/style.scss */
 #second {
-    margin-left: 106px;
+  margin-left: 106px;
 }
+
+/* line 177, ../../scss/style.scss */
 .copyright {
-    background: #666666;
-    border-bottom: 3px solid;
-	padding: 10px 0;
-	color: #fff;
+  background: #666666;
+  border-bottom: 3px solid;
+  padding: 10px 0;
+  color: #fff;
 }
+
+/* line 183, ../../scss/style.scss */
 .copyright h5 {
-    float: left;
-	font-size: 20px;
+  float: left;
+  font-size: 20px;
 }
-.copyright span{
-	float: right;
+
+/* line 187, ../../scss/style.scss */
+.copyright span {
+  float: right;
 }
 
 /* Edit profile */
-
+/* line 193, ../../scss/style.scss */
 .edit input, .edit textarea {
-    border: 2px solid;
-    margin-bottom: 10px;
-    padding: 4px;
-    width: 100%;
+  border: 2px solid;
+  margin-bottom: 10px;
+  padding: 4px;
+  width: 100%;
 }
+
+/* line 199, ../../scss/style.scss */
 .edit label {
-    width: 100%;
+  width: 100%;
 }
+
+/* line 202, ../../scss/style.scss */
 .edit div {
-    margin: 10px 0 0;
+  margin: 10px 0 0;
 }
-.edit .btn{
-	background: #e06666;
-    border: 2px solid #000000;
-    box-shadow: 2px 3px 1px #000000;
-    color: #ffffff;
-    display: inline;
-    margin: 0 5px;
-    padding: 5px 10px;
-	width: 100%;
-	border-radius: 0;
+
+/* line 205, ../../scss/style.scss */
+.edit .btn {
+  background: #e06666;
+  border: 2px solid #000000;
+  box-shadow: 2px 3px 1px #000000;
+  color: #ffffff;
+  display: inline;
+  margin: 0 5px;
+  padding: 5px 10px;
+  width: 100%;
+  border-radius: 0;
 }
 
 /* User answer */
+/* line 218, ../../scss/style.scss */
 .question, .list {
-    float: left;
-    width: 100%;
-    list-style: none;
-}
-.question h1 {
-    color: #e06666;
-    font-size: 25px;
-	float: left;
-	margin: 0 0 20px 0px;
-}
-.list {
-    border-bottom: 2px solid #cccccc;
-    float: left;
-    list-style: outside none none;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    width: 100%;
-}
-.list li{
-	display: inline;
-	padding-right: 12px;
-	border: 0px none;
-}
-.list i {
-    padding-right: 8px;
-	padding-right: 14px;
-}
-.q-btn{
-	background: #e06666;
-    border: 2px solid #000000;
-    box-shadow: 2px 3px 1px #000000;
-    color: #ffffff;
-    display: inline;
-    padding: 5px 25px;
-	float: right;
-}
-.q-btn:hover{
-	color: #fff;
-	text-decoration: none;
-}
-.list-view .fa-user {
-    border: 0 none!important;
-    border-radius: 0!important;
-    color: #000000!important;
-    font-size: 15px!important;
-    padding-top: 0!important;
-    padding-bottom: 0!important;
-    padding-left: 0!important;
-	padding-right: 14px!important;
-}
-.text-warning {
-    color: #ff9900!important;
-}
-.fa.fa-question {
-    background: #ffffff;
-    border: 1px solid;
-    border-radius: 12px;
-    color: #000000;
-    margin-right: 12px;
-    padding: 1px 4px;
-}
-.bs-example {
-    float: right;
-}
-.current{
-	background: #e06666!important;
+  float: left;
+  width: 100%;
+  list-style: none;
 }
 
+/* line 223, ../../scss/style.scss */
+.question h1 {
+  color: #e06666;
+  font-size: 25px;
+  float: left;
+  margin: 0 0 20px 0px;
+}
+
+/* line 229, ../../scss/style.scss */
+.list {
+  border-bottom: 2px solid #cccccc;
+  float: left;
+  list-style: outside none none;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+/* line 237, ../../scss/style.scss */
+.list li {
+  display: inline;
+  padding-right: 12px;
+  border: 0px none;
+}
+
+/* line 242, ../../scss/style.scss */
+.list i {
+  padding-right: 8px;
+  padding-right: 14px;
+}
+
+/* line 246, ../../scss/style.scss */
+.q-btn {
+  background: #e06666;
+  border: 2px solid #000000;
+  box-shadow: 2px 3px 1px #000000;
+  color: #ffffff;
+  display: inline;
+  padding: 5px 25px;
+  float: right;
+}
+
+/* line 255, ../../scss/style.scss */
+.q-btn:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 259, ../../scss/style.scss */
+.list-view .fa-user {
+  border: 0 none !important;
+  border-radius: 0 !important;
+  color: black !important;
+  font-size: 15px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 14px !important;
+}
+
+/* line 269, ../../scss/style.scss */
+.text-warning {
+  color: #ff9900 !important;
+}
+
+/* line 272, ../../scss/style.scss */
+.fa.fa-question {
+  background: #ffffff;
+  border: 1px solid;
+  border-radius: 12px;
+  color: #000000;
+  margin-right: 12px;
+  padding: 1px 4px;
+}
+
+/* line 280, ../../scss/style.scss */
+.bs-example {
+  float: right;
+}
+
+/* line 283, ../../scss/style.scss */
+.current {
+  background: #e06666 !important;
+}
 
 /*Nicks CSS*/
-
-
-.container .q-btn-home{
-	background: #e06666;
-    border: 2px solid #000000;
-    box-shadow: 2px 3px 1px #000000;
-    color: #ffffff;
-    display: inline;
-    padding: 5px 25px;
+/* line 291, ../../scss/style.scss */
+.container .q-btn-home {
+  background: #e06666;
+  border: 2px solid #000000;
+  box-shadow: 2px 3px 1px #000000;
+  color: #ffffff;
+  display: inline;
+  padding: 5px 25px;
 }
 
-.container .r-btn-home{
-	background: grey;
-    border: 2px solid #000000;
-    box-shadow: 2px 3px 1px #000000;
-    color: #ffffff;
-    display: inline;
-    padding: 5px 25px;
+/* line 300, ../../scss/style.scss */
+.container .r-btn-home {
+  background: grey;
+  border: 2px solid #000000;
+  box-shadow: 2px 3px 1px #000000;
+  color: #ffffff;
+  display: inline;
+  padding: 5px 25px;
 }
 
-
+/* line 310, ../../scss/style.scss */
 .long-botton {
-    display:block;
-    width:100%
+  display: block;
+  width: 100%;
 }
 
+/* line 315, ../../scss/style.scss */
 .font-white {
-    color:#fff
+  color: white;
 }
 
+/* line 319, ../../scss/style.scss */
 .no-radius {
-    border-radius:0!important
+  border-radius: 0 !important;
 }
 
+/* line 323, ../../scss/style.scss */
 .question .theme-form {
-    border:2px solid #000
+  border: 2px solid black;
 }
 
+/* line 327, ../../scss/style.scss */
 .modal .theme-form {
-    border:2px solid #000
+  border: 2px solid black;
 }
 
+/* line 331, ../../scss/style.scss */
 .container .theme-button {
-    background:#333;
-    border:2px solid #000;
-    color:#fff;
-    display:inline;
-    margin:0 5px;
-    padding:5px 10px;
-    box-shadow:2px 3px 1px #000
+  background: #333;
+  border: 0;
+  color: #fff;
+  display: inline;
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 50px;
+  line-height: 50px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+/* line 349, ../../scss/style.scss */
+.container .theme-button:hover {
+  color: #e06666;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: black;
+  height: 50px;
+  line-height: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
 }
 
+/* line 363, ../../scss/style.scss */
 .container .theme-button-head {
-    background:#333;
-    border:2px solid #000;
-    color:#fff;
-    display:inline;
-    margin:0 5px;
-    padding:11px 10px;
-    box-shadow:2px 1px 1px #000
+  background: #333;
+  border: 0;
+  color: #fff;
+  display: inline;
+  margin: 0 5px;
+  padding: 11px 10px;
+  /*box-shadow:2px 1px 1px #000*/
+  height: 46px;
+  width: 90px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+/* line 377, ../../scss/style.scss */
+.container .theme-button-head:hover {
+  color: #e06666;
+  background: black;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
 }
 
+/* line 384, ../../scss/style.scss */
 .theme-button-white {
-    background:#fff;
-    border:2px solid #000;
-    color:#000;
-    display:inline;
-    margin:0;
-    padding:5px 10px;
-    box-shadow:2px 3px 1px #000
+  background: #fff;
+  border: 2px solid #000;
+  color: #000;
+  display: inline;
+  margin: 0;
+  padding: 5px 10px;
+  box-shadow: 2px 3px 1px black;
 }
 
-.login{
-padding:50px
+/* line 394, ../../scss/style.scss */
+.login {
+  padding: 50px;
 }
 
-.login hr{
-border-bottom:2px solid black
+/* line 398, ../../scss/style.scss */
+.login hr {
+  border-bottom: 2px solid black;
 }
 
-.modal-header{
-
-color:#c4484d;
+/* line 402, ../../scss/style.scss */
+.modal-header {
+  color: #c4484d;
 }
 
-  .theme-button-white{
-     
-     background: white;
-   	 border: 2px solid #000000;
-     color: black;
-    display: inline;
-    margin: 0px;
-    padding: 5px 10px;
-	box-shadow: 2px 3px 1px #000;
-	
-     }
-     
-     .modal .theme-button-red{
-     
-     background: #c4484d;
-   	 border: 2px solid #000000;
-     color: black;
-    display: inline;
-    margin: 0px;
-    padding: 5px 10px;
-	box-shadow: 2px 3px 1px #000;
-	
-     }
-     
-     .theme-button-red:active{
-     
-     background: #c4484d;
-   	 border: 2px solid #000000;
-     color: black;
-    display: inline;
-    margin: 0px;
-    padding: 5px 10px;
-	box-shadow: 2px 3px 1px #000;
-	
-     }
-     
-     
-     .theme-button-red{
-     
-     color:white;
-	
-     }
-     
-     
-     .theme-button-red:hover{
-     
-     background: #c4484d;
-   	 border: 2px solid #000000;
-     color: black;
-    display: inline;
-    margin: 0px;
-    padding: 5px 10px;
-	box-shadow: 2px 3px 1px #000;
-	
-     }
-     
-     .spacer{
-   	min-height:200px;
-     }
-     
-     .reg-height{
-     min-height:600px;
-     }
-     
-     .theme-button:active{
-     
-     background: #333333;
-   	 border: 2px solid #000000;
-     color: #ffffff;
-    display: inline;
-    margin: 0 5px;
-    padding: 5px 10px;
-	box-shadow: 2px 3px 1px #000;
-	
-     }
-     
-     .theme-button:hover{
-     
-     background: #525553;
-   	 border: 2px solid #000000;
-     color: #ffffff;
-    display: inline;
-    margin: 0 5px;
-    padding: 5px 10px;
-	box-shadow: 2px 3px 1px #000;
-	
-     }
-     
-     .theme-button:focus{
-     
-     background: #525553;
-   	 border: 2px solid #000000;
-     color: #ffffff;
-    display: inline;
-    margin: 0 5px;
-    padding: 5px 10px;
-	box-shadow: 2px 3px 1px #000;
-	
-     }
-     
+/* line 407, ../../scss/style.scss */
+.theme-button-white {
+  background: white;
+  border: 2px solid #000000;
+  color: black;
+  display: inline;
+  margin: 0px;
+  padding: 5px 10px;
+  box-shadow: 2px 3px 1px #000;
+}
+
+/* line 419, ../../scss/style.scss */
+.modal .theme-button-red {
+  background: #c4484d;
+  border: 2px solid #000000;
+  color: black;
+  display: inline;
+  margin: 0px;
+  padding: 5px 10px;
+  box-shadow: 2px 3px 1px #000;
+}
+
+/* line 431, ../../scss/style.scss */
+.theme-button-red:active {
+  background: #c4484d;
+  border: 2px solid #000000;
+  color: black;
+  display: inline;
+  margin: 0px;
+  padding: 5px 10px;
+  box-shadow: 2px 3px 1px #000;
+}
+
+/* line 444, ../../scss/style.scss */
+.theme-button-red {
+  color: white;
+}
+
+/* line 451, ../../scss/style.scss */
+.theme-button-red:hover {
+  background: #c4484d;
+  border: 2px solid #000000;
+  color: black;
+  display: inline;
+  margin: 0px;
+  padding: 5px 10px;
+  box-shadow: 2px 3px 1px #000;
+}
+
+/* line 463, ../../scss/style.scss */
+.spacer {
+  min-height: 200px;
+}
+
+/* line 467, ../../scss/style.scss */
+.reg-height {
+  min-height: 600px;
+}
+
+/* line 471, ../../scss/style.scss */
 .theme-button:active {
-    background:#333;
-    border:2px solid #000;
-    color:#fff;
-    display:inline;
-    margin:0 5px;
-    padding:5px 10px;
-    box-shadow:2px 3px 1px #000
+  background: #333333;
+  border: 2px solid #000000;
+  color: #ffffff;
+  display: inline;
+  margin: 0 5px;
+  padding: 5px 10px;
+  box-shadow: 2px 3px 1px #000;
 }
 
+/* line 483, ../../scss/style.scss */
 .theme-button:hover {
-    background:#525553;
-    border:2px solid #000;
-    color:#fff;
-    display:inline;
-    margin:0 5px;
-    padding:5px 10px;
-    box-shadow:2px 3px 1px #000
+  background: #525553;
+  border: 2px solid #000000;
+  color: #ffffff;
+  display: inline;
+  margin: 0 5px;
+  padding: 5px 10px;
+  box-shadow: 2px 3px 1px #000;
 }
 
+/* line 495, ../../scss/style.scss */
 .theme-button:focus {
-    background:#525553;
-    border:2px solid #000;
-    color:#fff;
-    display:inline;
-    margin:0 5px;
-    padding:5px 10px;
-    box-shadow:2px 3px 1px #000
+  background: #525553;
+  border: 2px solid #000000;
+  color: #ffffff;
+  display: inline;
+  margin: 0 5px;
+  padding: 5px 10px;
+  box-shadow: 2px 3px 1px #000;
 }
 
+/* line 507, ../../scss/style.scss */
+.theme-button:active {
+  background: #333;
+  border: 2px solid #000;
+  color: #fff;
+  display: inline;
+  margin: 0 5px;
+  padding: 5px 10px;
+  box-shadow: 2px 3px 1px black;
+}
+
+/* line 517, ../../scss/style.scss */
+.theme-button:hover {
+  background: #525553;
+  border: 2px solid #000;
+  color: #fff;
+  display: inline;
+  margin: 0 5px;
+  padding: 5px 10px;
+  box-shadow: 2px 3px 1px black;
+}
+
+/* line 527, ../../scss/style.scss */
+.theme-button:focus {
+  background: #525553;
+  border: 2px solid #000;
+  color: #fff;
+  display: inline;
+  margin: 0 5px;
+  padding: 5px 10px;
+  box-shadow: 2px 3px 1px black;
+}
+
+/* line 537, ../../scss/style.scss */
 .inner-addon {
-    position:relative
+  position: relative;
 }
 
+/* line 541, ../../scss/style.scss */
 .inner-addon-lg {
-    position:relative
+  position: relative;
 }
 
+/* line 545, ../../scss/style.scss */
 .inner-addon-lg .glyphicon {
-    position:absolute;
-    padding:15px;
-    pointer-events:none
+  position: absolute;
+  padding: 15px;
+  pointer-events: none;
 }
 
 /* style icon */
+/* line 552, ../../scss/style.scss */
 .inner-addon .glyphicon {
-    position:absolute;
-    padding:10px;
-    pointer-events:none
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
 }
 
+/* line 558, ../../scss/style.scss */
 .inner-addon .button {
-    position:absolute;
-    padding:10px;
-    pointer-events:none
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
 }
 
 /* align icon */
+/* line 565, ../../scss/style.scss */
 .left-addon .glyphicon {
-    left:0
+  left: 0;
 }
 
+/* line 569, ../../scss/style.scss */
 .right-addon .glyphicon {
-    right:0
+  right: 0;
 }
 
 /* add padding  */
+/* line 574, ../../scss/style.scss */
 .left-addon input {
-    padding-left:30px
+  padding-left: 30px;
 }
 
+/* line 578, ../../scss/style.scss */
 .right-addon input {
-    padding-right:30px
+  padding-right: 30px;
 }
 
-
+/* line 583, ../../scss/style.scss */
 .label {
-    line-height: 2 !important;
+  line-height: 2 !important;
 }
 
+/* line 587, ../../scss/style.scss */
 .question {
-    min-height:200px;
-    margin-bottom:30px;
-    border:2px solid #000;
-    position:relative
+  min-height: 200px;
+  margin-bottom: 30px;
+  border: 2px solid #000;
+  position: relative;
 }
 
+/* line 594, ../../scss/style.scss */
 .container .home-nav {
-    border-bottom:2px solid #d65051
+  border-bottom: 2px solid #d65051;
 }
 
+/* line 598, ../../scss/style.scss */
 .home-nav a {
-    color:#000
+  color: black;
 }
 
-
-.nav-tabs.nav-tabs > li.active > a,.nav-tabs > li.active > a:hover,.nav-tabs > li.active > a:focus {
-    color:#fff;
-    background-color:#d65051;
-    border:2px solid #d65051
+/* line 603, ../../scss/style.scss */
+.nav-tabs.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: #fff;
+  background-color: #d65051;
+  border: 2px solid #d65051;
 }
 
+/* line 609, ../../scss/style.scss */
 .user-profile {
-    margin-right:10px
+  margin-right: 10px;
 }
 
+/* line 613, ../../scss/style.scss */
 .question-list {
-    bottom:0;
-    border-bottom:none;
-    clear:all
+  bottom: 0;
+  border-bottom: none;
+  clear: all;
 }
 
+/* line 619, ../../scss/style.scss */
 a .active {
-    background-color:read
+  background-color: read;
 }
-
 
 /*END NICKS CSS*/
-
-
 /*Peter's CSS*/
 /*ask question begin*/
-.ask input, .ask textarea,.ask select {
-    border: 2px solid;
-    margin-bottom: 10px;
-    padding: 4px;
+/* line 629, ../../scss/style.scss */
+.ask input, .ask textarea, .ask select {
+  border: 2px solid;
+  margin-bottom: 10px;
+  padding: 4px;
 }
+
+/* line 634, ../../scss/style.scss */
 .ask div {
-    margin: 10px 0 ;
-	display:inline-block;
-	
+  margin: 10px 0;
+  display: inline-block;
 }
+
+/* line 639, ../../scss/style.scss */
 .ask label {
-	margin: 13px 0 ;
-    text-align:left;
-	vertical-align:middle;
-	float: inherit;
+  margin: 13px 0;
+  text-align: left;
+  vertical-align: middle;
+  float: inherit;
 }
+
+/* line 645, ../../scss/style.scss */
 .ask #submit {
-	background: #e06666;
-    border: 2px solid #000000;
-    box-shadow: 2px 3px 1px #000000;
-    color: #ffffff;
-    display: inline;
-    margin: 0 5px;
-    padding: 5px 10px;
-	width: 100%;
-	border-radius: 0;
+  background: #e06666;
+  border: 2px solid #000000;
+  box-shadow: 2px 3px 1px #000000;
+  color: #ffffff;
+  display: inline;
+  margin: 0 5px;
+  padding: 5px 10px;
+  width: 100%;
+  border-radius: 0;
 }
+
+/* line 656, ../../scss/style.scss */
 .ask label i {
-	color: #f00;
+  color: #f00;
 }
+
+/* line 659, ../../scss/style.scss */
 .ask #dropdownCategory {
-	text-align: left;
+  text-align: left;
 }
 
-.ask .dropdown-toggle  {
-	text-align: left;
-	margin-top: 8px;
+/* line 663, ../../scss/style.scss */
+.ask .dropdown-toggle {
+  text-align: left;
+  margin-top: 8px;
 }
+
+/* line 667, ../../scss/style.scss */
 .ask button span {
-	float:right;
-	margin-top: 8px;
+  float: right;
+  margin-top: 8px;
 }
 
-@media screen and (min-width: 640px){
-	.answer-list {
-		margin-left: 60px;
-	}
+@media screen and (min-width: 640px) {
+  /* line 673, ../../scss/style.scss */
+  .answer-list {
+    margin-left: 60px;
+  }
 }
-@media screen and (max-width: 320px){
-	.ask div {
-	display: block;
-	}
+@media screen and (max-width: 320px) {
+  /* line 678, ../../scss/style.scss */
+  .ask div {
+    display: block;
+  }
 }
-@media screen and (max-width: 620px){
-	.media-body {
-		display:inline-block;
-	}
-	.media-body .col-md-12 , .col-md-1, .col-md-7 {
-		padding:0;
-		margin:0;
-	}
+@media screen and (max-width: 620px) {
+  /* line 683, ../../scss/style.scss */
+  .media-body {
+    display: inline-block;
+  }
+
+  /* line 686, ../../scss/style.scss */
+  .media-body .col-md-12, .col-md-1, .col-md-7 {
+    padding: 0;
+    margin: 0;
+  }
 }
 /*ask question end*/
+/* line 692, ../../scss/style.scss */
 .reply {
-	float: right;
-	color: #f00;
+  float: right;
+  color: #f00;
 }
 
-.pull-right  li{
-	padding-left:0px;
+/* line 697, ../../scss/style.scss */
+.pull-right li {
+  padding-left: 0px;
 }
+
+/* line 700, ../../scss/style.scss */
 .pull-right li i {
-	padding-left:0px;
+  padding-left: 0px;
 }
 
-@media screen and (max-width: 980px){
-	#second{
-		margin: 0;
-	}
-	.nav li a{
-		padding: 10px 8px!important;
-	}
-	.contact li {
+@media screen and (max-width: 980px) {
+  /* line 705, ../../scss/style.scss */
+  #second {
+    margin: 0;
+  }
+
+  /* line 708, ../../scss/style.scss */
+  .nav li a {
+    padding: 10px 8px !important;
+  }
+
+  /* line 711, ../../scss/style.scss */
+  .contact li {
     padding: 0;
-	background: none;
+    background: none;
+  }
+
+  /* line 715, ../../scss/style.scss */
+  .contact li a {
+    padding: 0 7px;
+  }
 }
-	.contact li a{
-		 padding: 0 7px;
-	}
-}
-@media screen and (max-width: 480px){
-	.copyright {
+@media screen and (max-width: 480px) {
+  /* line 720, ../../scss/style.scss */
+  .copyright {
     text-align: center;
-}
-.copyright h5, .copyright span  {
+  }
+
+  /* line 723, ../../scss/style.scss */
+  .copyright h5, .copyright span {
     float: none;
-}
-.question h1{
-	font-size: 18px;
-}
-.list{
-	margin-top: 14px;
-	line-height: 28px;
-}
+  }
 
-}
+  /* line 726, ../../scss/style.scss */
+  .question h1 {
+    font-size: 18px;
+  }
 
-@media screen and (max-width: 360px){
-	.contact{
-		float: left;
-	}
-	.tags li{
-		 padding: 5px;
-	}
-	.stats li{
-		font-size: 15px;
-		line-height: 37px;
-	}
-	.q-btn{
-		 float: left;
-	}
-	.list li{
-		 display: block;
-	}
+  /* line 729, ../../scss/style.scss */
+  .list {
+    margin-top: 14px;
+    line-height: 28px;
+  }
+}
+@media screen and (max-width: 360px) {
+  /* line 736, ../../scss/style.scss */
+  .contact {
+    float: left;
+  }
+
+  /* line 739, ../../scss/style.scss */
+  .tags li {
+    padding: 5px;
+  }
+
+  /* line 742, ../../scss/style.scss */
+  .stats li {
+    font-size: 15px;
+    line-height: 37px;
+  }
+
+  /* line 746, ../../scss/style.scss */
+  .q-btn {
+    float: left;
+  }
+
+  /* line 749, ../../scss/style.scss */
+  .list li {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 756, ../../scss/style.scss */
+  .navbar.navbar-static-top .navbar-nav li {
+    margin-right: 5px;
+  }
+}
+/* line 760, ../../scss/style.scss */
+.navbar.navbar-static-top .navbar-nav li a {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
