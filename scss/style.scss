@@ -1,4 +1,5 @@
 @import "compass";
+$brand-color: #e06666;
 
 *{
 	margin: 0;
@@ -764,4 +765,67 @@ a .active {
             }
         }
     }
+}
+
+.alert.alert-info {
+    border-color: rgba(black, .1);
+    border-width: 1px;
+}
+
+.question {
+    border-width: 1px;
+    border-color: rgba(black, .1);
+    .media-heading {
+        font-family: sans-serif;
+        color: $brand-color;
+        font-size: 30px;
+        line-height: 36px;
+        margin-top: 0;
+        padding-top: 0;
+        @media screen and (min-width: 768px) {
+            margin-top: 20px;
+        }
+    }
+    p {
+        color: rgba(black, .4);
+    }
+    .media-body {
+        .botton-box {
+            .q-btn-home,
+            .r-btn-home {
+                @include box-shadow(none);
+                border: 0;
+                font-size: 12px;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+#about-admin {
+    h3 {
+        text-transform: uppercase;
+        font-family: sans-serif;
+        border-width: 1px;
+    }
+    .tags {
+        li {
+            @include box-shadow(none);
+            border: 0;
+            @include border-left-radius(4px);
+            @include border-right-radius(4px);
+            a {
+                font-family: sans-serif;
+                text-transform: uppercase;
+                font-size: smaller;
+            }
+        }
+    }
+}
+
+.theme-button-white {
+    @include box-shadow(none);
+    font-family: sans-serif;
+    text-transform: uppercase;
 }
