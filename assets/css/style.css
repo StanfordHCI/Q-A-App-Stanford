@@ -1077,18 +1077,35 @@ a .active {
 .homepage {
   background: #eee;
 }
-/* line 3, ../../scss/_homepage.scss */
+/* line 4, ../../scss/_homepage.scss */
+.homepage .home-nav li {
+  border: 0;
+}
+/* line 6, ../../scss/_homepage.scss */
+.homepage .home-nav li.active {
+  border: 0;
+  background: none;
+}
+/* line 10, ../../scss/_homepage.scss */
+.homepage .home-nav li a {
+  border: 0;
+}
+/* line 14, ../../scss/_homepage.scss */
+.homepage .home-nav li a:hover, .homepage .home-nav li a:focus, .homepage .home-nav li a:active {
+  border: 0;
+}
+/* line 20, ../../scss/_homepage.scss */
 .homepage .question-answer-bit {
   background: white;
   margin-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
-  /* line 3, ../../scss/_homepage.scss */
+  /* line 20, ../../scss/_homepage.scss */
   .homepage .question-answer-bit {
     padding: 20px;
   }
 }
-/* line 11, ../../scss/_homepage.scss */
+/* line 28, ../../scss/_homepage.scss */
 .homepage .question-answer-bit .content-wrap .bit-header .bit-title {
   margin: 0;
   padding: 0;
@@ -1098,15 +1115,55 @@ a .active {
   color: #e06666;
   margin-top: 10px;
 }
-/* line 21, ../../scss/_homepage.scss */
+@media screen and (min-width: 768px) {
+  /* line 28, ../../scss/_homepage.scss */
+  .homepage .question-answer-bit .content-wrap .bit-header .bit-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 960px) {
+  /* line 28, ../../scss/_homepage.scss */
+  .homepage .question-answer-bit .content-wrap .bit-header .bit-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 28, ../../scss/_homepage.scss */
+  .homepage .question-answer-bit .content-wrap .bit-header .bit-title {
+    font-size: 27px;
+    line-height: 36px;
+  }
+}
+/* line 50, ../../scss/_homepage.scss */
 .homepage .question-answer-bit .content-wrap .bit-entry {
   font-size: 12px;
 }
-/* line 23, ../../scss/_homepage.scss */
+@media screen and (min-width: 768px) {
+  /* line 50, ../../scss/_homepage.scss */
+  .homepage .question-answer-bit .content-wrap .bit-entry {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 960px) {
+  /* line 50, ../../scss/_homepage.scss */
+  .homepage .question-answer-bit .content-wrap .bit-entry {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 50, ../../scss/_homepage.scss */
+  .homepage .question-answer-bit .content-wrap .bit-entry {
+    font-size: 15px;
+  }
+}
+/* line 62, ../../scss/_homepage.scss */
 .homepage .question-answer-bit .content-wrap .bit-entry p {
   margin-bottom: 0;
 }
-/* line 28, ../../scss/_homepage.scss */
+/* line 67, ../../scss/_homepage.scss */
 .homepage .question-answer-bit .bit-metadata {
   background: none;
   margin: 0;
@@ -1117,34 +1174,34 @@ a .active {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  /* line 28, ../../scss/_homepage.scss */
+  /* line 67, ../../scss/_homepage.scss */
   .homepage .question-answer-bit .bit-metadata {
     display: block;
     text-align: right;
   }
 }
-/* line 40, ../../scss/_homepage.scss */
+/* line 79, ../../scss/_homepage.scss */
 .homepage .question-answer-bit .bit-metadata ul:first-child {
   display: inline;
 }
-/* line 42, ../../scss/_homepage.scss */
+/* line 81, ../../scss/_homepage.scss */
 .homepage .question-answer-bit .bit-metadata ul:first-child li {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 45, ../../scss/_homepage.scss */
+/* line 84, ../../scss/_homepage.scss */
 .homepage .question-answer-bit .bit-metadata ul:first-child li i {
   margin-right: 3px;
 }
-/* line 50, ../../scss/_homepage.scss */
+/* line 89, ../../scss/_homepage.scss */
 .homepage .question-answer-bit .bit-metadata ul.button-wrap {
   margin-top: 20px;
 }
-/* line 52, ../../scss/_homepage.scss */
+/* line 91, ../../scss/_homepage.scss */
 .homepage .question-answer-bit .bit-metadata ul.button-wrap .btn-primary {
   background: #e06666;
 }
-/* line 55, ../../scss/_homepage.scss */
+/* line 94, ../../scss/_homepage.scss */
 .homepage .question-answer-bit .bit-metadata ul.button-wrap .btn {
   font-family: sans-serif;
 }

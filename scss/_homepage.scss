@@ -1,5 +1,22 @@
 .homepage {
 	background: #eee;
+	.home-nav {
+		li {
+			border: 0;
+			&.active {
+				border: 0;
+				background: none;
+			}
+			a {
+				border: 0;
+				&:hover,
+				&:focus,
+				&:active {
+					border: 0;
+				}
+			}
+		}
+	}
 	.question-answer-bit {
 		background: white;
 		margin-bottom: 10px;
@@ -16,10 +33,32 @@
 					font-family: sans-serif;
 					color: $brand-color;
 					margin-top: 10px;
+					@media screen and (min-width: 768px) {
+						font-size: 20px;
+						line-height: 30px;
+					}
+					@media screen and (min-width: 960px) {
+						font-size: 24px;
+						line-height: 30px;
+					}
+					@media screen and (min-width: 1200px) {
+						font-size: 27px;
+						line-height: 36px;
+					}
 				}
 			}
 			.bit-entry {
 				font-size: 12px;
+				@media screen and (min-width: 768px) {
+					font-size: 13px;
+				}
+				@media screen and (min-width: 960px) {
+					font-size: 14px;
+					line-height: 20px;
+				}
+				@media screen and (min-width: 1200px) {
+					font-size: 15px;
+				}
 				p {
 					margin-bottom: 0;
 				}
