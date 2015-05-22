@@ -1029,6 +1029,23 @@ a .active {
   text-transform: uppercase;
 }
 
+/* line 840, ../../scss/style.scss */
+.btn,
+button {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+/* line 847, ../../scss/style.scss */
+input,
+textarea,
+select {
+  border-color: rgba(0, 0, 0, 0.2) !important;
+  border-width: 1px !important;
+}
+
 /* --- Site Footer --- */
 /* line 2, ../../scss/_site-footer.scss */
 #contentinfo {
