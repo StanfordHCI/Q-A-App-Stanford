@@ -1,0 +1,61 @@
+.homepage {
+	background: #eee;
+	.question-answer-bit {
+		background: white;
+		margin-bottom: 10px;
+		@media screen and(min-width: 768px) {
+			padding: 20px;
+		}
+		.content-wrap {
+			.bit-header {
+				.bit-title {
+					margin: 0;
+					padding: 0;
+					font-size: 16px;
+					text-transform: uppercase;
+					font-family: sans-serif;
+					color: $brand-color;
+					margin-top: 10px;
+				}
+			}
+			.bit-entry {
+				font-size: 12px;
+				p {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.bit-metadata {
+			background: none;
+			margin: 0;
+			padding: 0;
+			border: 0;
+			float: none;
+			display: block;
+			display: none;
+			@media screen and(min-width: 768px) {
+				display: block;
+				text-align: right;
+			}
+			ul:first-child {
+				display: inline;
+				li {
+					display: inline-block;
+					margin-right: 5px;
+					i {
+						margin-right: 3px;
+					}
+				}
+			}
+			ul.button-wrap {
+				margin-top: 20px;
+				.btn-primary {
+					background: $brand-color;
+				}
+				.btn {
+					font-family: sans-serif;
+				}
+			}
+		}
+	}
+}

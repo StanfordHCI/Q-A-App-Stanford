@@ -947,7 +947,13 @@ a .active {
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.1);
 }
-/* line 778, ../../scss/style.scss */
+@media screen and (min-width: 768px) {
+  /* line 775, ../../scss/style.scss */
+  .question {
+    padding-top: 20px;
+  }
+}
+/* line 781, ../../scss/style.scss */
 .question .media-heading {
   font-family: sans-serif;
   color: #e06666;
@@ -956,17 +962,17 @@ a .active {
   margin-top: 0;
   padding-top: 0;
 }
-@media screen and (min-width: 768px) {
-  /* line 778, ../../scss/style.scss */
-  .question .media-heading {
-    margin-top: 20px;
-  }
-}
 /* line 789, ../../scss/style.scss */
 .question p {
   color: rgba(0, 0, 0, 0.4);
 }
-/* line 795, ../../scss/style.scss */
+@media screen and (min-width: 768px) {
+  /* line 793, ../../scss/style.scss */
+  .question .media-body .botton-box {
+    margin-top: -15px;
+  }
+}
+/* line 798, ../../scss/style.scss */
 .question .media-body .botton-box .q-btn-home,
 .question .media-body .botton-box .r-btn-home {
   -webkit-box-shadow: none;
@@ -978,13 +984,13 @@ a .active {
   text-decoration: none;
 }
 
-/* line 807, ../../scss/style.scss */
+/* line 810, ../../scss/style.scss */
 #about-admin h3 {
   text-transform: uppercase;
   font-family: sans-serif;
   border-width: 1px;
 }
-/* line 813, ../../scss/style.scss */
+/* line 816, ../../scss/style.scss */
 #about-admin .tags li {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -1003,18 +1009,138 @@ a .active {
   -webkit-border-bottom-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-/* line 818, ../../scss/style.scss */
+/* line 821, ../../scss/style.scss */
 #about-admin .tags li a {
   font-family: sans-serif;
   text-transform: uppercase;
   font-size: smaller;
 }
 
-/* line 827, ../../scss/style.scss */
+/* line 830, ../../scss/style.scss */
 .theme-button-white {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
   font-family: sans-serif;
   text-transform: uppercase;
+}
+
+/* --- Site Footer --- */
+/* line 2, ../../scss/_site-footer.scss */
+#contentinfo {
+  background: #e06666;
+  padding: 20px 0;
+  margin: 0;
+  border: 0;
+}
+/* line 7, ../../scss/_site-footer.scss */
+#contentinfo .site-info {
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* line 10, ../../scss/_site-footer.scss */
+#contentinfo .site-info .copyright-text {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+/* line 16, ../../scss/_site-footer.scss */
+#contentinfo .footer-links {
+  text-align: center;
+}
+/* line 18, ../../scss/_site-footer.scss */
+#contentinfo .footer-links ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 21, ../../scss/_site-footer.scss */
+#contentinfo .footer-links ul li {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* line 25, ../../scss/_site-footer.scss */
+#contentinfo .footer-links ul li a {
+  display: block;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: smaller;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 1, ../../scss/_homepage.scss */
+.homepage {
+  background: #eee;
+}
+/* line 3, ../../scss/_homepage.scss */
+.homepage .question-answer-bit {
+  background: white;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  /* line 3, ../../scss/_homepage.scss */
+  .homepage .question-answer-bit {
+    padding: 20px;
+  }
+}
+/* line 11, ../../scss/_homepage.scss */
+.homepage .question-answer-bit .content-wrap .bit-header .bit-title {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: #e06666;
+  margin-top: 10px;
+}
+/* line 21, ../../scss/_homepage.scss */
+.homepage .question-answer-bit .content-wrap .bit-entry {
+  font-size: 12px;
+}
+/* line 23, ../../scss/_homepage.scss */
+.homepage .question-answer-bit .content-wrap .bit-entry p {
+  margin-bottom: 0;
+}
+/* line 28, ../../scss/_homepage.scss */
+.homepage .question-answer-bit .bit-metadata {
+  background: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  float: none;
+  display: block;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  /* line 28, ../../scss/_homepage.scss */
+  .homepage .question-answer-bit .bit-metadata {
+    display: block;
+    text-align: right;
+  }
+}
+/* line 40, ../../scss/_homepage.scss */
+.homepage .question-answer-bit .bit-metadata ul:first-child {
+  display: inline;
+}
+/* line 42, ../../scss/_homepage.scss */
+.homepage .question-answer-bit .bit-metadata ul:first-child li {
+  display: inline-block;
+  margin-right: 5px;
+}
+/* line 45, ../../scss/_homepage.scss */
+.homepage .question-answer-bit .bit-metadata ul:first-child li i {
+  margin-right: 3px;
+}
+/* line 50, ../../scss/_homepage.scss */
+.homepage .question-answer-bit .bit-metadata ul.button-wrap {
+  margin-top: 20px;
+}
+/* line 52, ../../scss/_homepage.scss */
+.homepage .question-answer-bit .bit-metadata ul.button-wrap .btn-primary {
+  background: #e06666;
+}
+/* line 55, ../../scss/_homepage.scss */
+.homepage .question-answer-bit .bit-metadata ul.button-wrap .btn {
+  font-family: sans-serif;
 }

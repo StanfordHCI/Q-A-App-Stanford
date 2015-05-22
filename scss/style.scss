@@ -775,6 +775,9 @@ a .active {
 .question {
     border-width: 1px;
     border-color: rgba(black, .1);
+    @media screen and (min-width: 768px) {
+        padding-top: 20px;
+    }
     .media-heading {
         font-family: sans-serif;
         color: $brand-color;
@@ -782,15 +785,15 @@ a .active {
         line-height: 36px;
         margin-top: 0;
         padding-top: 0;
-        @media screen and (min-width: 768px) {
-            margin-top: 20px;
-        }
     }
     p {
         color: rgba(black, .4);
     }
     .media-body {
         .botton-box {
+            @media screen and (min-width: 768px) {
+                margin-top: -15px;
+            }
             .q-btn-home,
             .r-btn-home {
                 @include box-shadow(none);
@@ -829,3 +832,9 @@ a .active {
     font-family: sans-serif;
     text-transform: uppercase;
 }
+
+// Site Footer
+@import "site-footer";
+
+// Homepage
+@import "homepage";
