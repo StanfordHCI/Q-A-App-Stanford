@@ -4,7 +4,7 @@ gem 'rails', '4.2.1'
 
 gem 'bootstrap-sass'
 gem 'devise'
-gem 'font-awesome-rails'
+gem 'font-awesome-sass'
 gem 'jquery-rails'
 gem 'mysql2'
 gem 'slim-rails'
