@@ -2,9 +2,12 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.1'
 
+gem 'bootstrap-sass'
 gem 'devise'
+gem 'font-awesome-rails'
 gem 'jquery-rails'
 gem 'mysql2'
+gem 'slim-rails'
 
 group :doc do
   gem 'sdoc', '~> 0.4.0'
@@ -22,3 +25,6 @@ group :development, :test do
   gem 'spring'
 end
 
+group :development do
+  gem 'letter_opener_web'
+end
