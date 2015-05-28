@@ -1,0 +1,397 @@
+<% content_for :body_class do %>
+ class="homepage"
+<% end %>
+
+<% content_for :styles do %>
+  <%= stylesheet_link_tag    'styles' %>
+  <%= stylesheet_link_tag    'bootstrap' %>
+  <%= stylesheet_link_tag    'font-awesome' %>
+
+
+  <style>
+    .container .q-btn-home {
+      background: #e06666;
+      border: 2px solid #000000;
+      box-shadow: 2px 3px 1px #000000;
+      color: #ffffff;
+      display: inline;
+      padding: 5px 25px;
+    }
+  </style>
+<% end %>
+
+<% content_for :scripts do %>
+  <%= javascript_include_tag 'jquery-1.11.1' %>
+  <%= javascript_include_tag 'bootstrap' %>
+<% end %>
+
+<div class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="col-md-12">
+      <div class="col-md-2">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="home.html"><%= image_tag 'qa_logo.jpg' %></a>
+        </div>
+      </div>
+
+      <div class="col-md-10">
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="home.html" class="active">HOME</a></li>
+            <li><a href="ask-question.html">Ask Question</a></li>
+            <li><a href="#">Question</a></li>
+            <li><a href="user-questions.html">User</a></li>
+          </ul>
+        </div>
+
+        <div class="contact">
+          <ul>
+            <li><i class="fa fa-user"></i><a href="#">Signout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /.navbar -->
+  
+<div class="btn-group btn-breadcrumb">
+  <div class="container">
+    <h1 class="font-white text-center">Welcome to Ask me, Awesome Questions &amp; Answer</h1>
+
+    <p class="text-center font-white">Dont be shy. Ask something.</p>
+
+    <br>
+
+    <div class="row">
+      <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+        <form>
+          <div class="form-group">
+            <div class="inner-addon-lg left-addon">
+              <i class="glyphicon glyphicon-search"></i>
+              
+              <div class="input-group">
+                <input type="text" class="form-control no-radius input-lg" id="ask-input" placeholder=" Ask a question">
+
+                <span class="input-group-btn">
+                  <button class="btn btn-default no-radius theme-button-head" type="button">&nbsp;Ask&nbsp;</button>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="inner-addon-lg left-addon">
+              <i class="glyphicon glyphicon-search"></i>
+
+              <div class="input-group">
+                <input type="text" class="form-control no-radius input-lg" id="search-input" placeholder=" Search questions.">
+
+                <span class="input-group-btn">
+                  <button class="btn btn-default no-radius theme-button-head" type="button">Search</button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <p class="text-center">or</p>
+
+        <p class="text-center">
+          <button class="btn btn-default no-radius theme-button btn-lg">Join Now</button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <section>
+    <div class="row">
+      <div class="col-md-4" id="about-admin">
+        <div class="alert alert-info">
+          <h3>Login<span></span></h3>
+          <div class="col-md-4"></div>
+
+          <div class="col-md-12">
+            <form>
+              <div class="form-group">
+                <div class="inner-addon left-addon">
+                  <i class="glyphicon glyphicon-user"></i>
+                  <input type="email" class="form-control no-radius theme-form" id="username-input" placeholder="Enter username">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="inner-addon left-addon">
+                  <i class="glyphicon glyphicon-lock"></i>
+                  <input type="password" class="form-control no-radius theme-form" id="password-input" placeholder="Password">
+                </div>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Remember me
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-default long-botton theme-button-white no-radius">Login</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="alert alert-info">
+          <h3>Tags</h3>
+          <ul class="tags">
+            <li><a href="">Project</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">UI</a></li>
+            <li><a href="">HTML</a></li>
+          </ul>
+
+          <ul class="tags">
+            <li><a href="">Project</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">UI</a></li>
+            <li><a href="">HTML</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="col-md-8">
+        <ul class="nav nav-tabs home-nav">
+          <li role="presentation" class="active" ><a class="active" href="#">Recent Questions</a></li>
+          <li role="presentation"><a href="#">Most Responses</a></li>
+          <li role="presentation"><a href="#">Recently Answered</a></li>
+          <li role="presentation"><a href="#">No Answers</a></li>
+        </ul>
+
+        <br>
+
+        <div class="questions-list clearfix">
+          <article class="question-answer-bit">
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="image-wrap">
+                  <a href="#">
+                    <img src="http://placehold.it/800x800" class="img-responsive img-circle">
+                  </a>
+                </div><!-- /.image-wrap -->
+              </div>
+
+              <div class="col-xs-8">
+                <div class="content-wrap">
+                  <header class="bit-header">
+                    <h1 class="bit-title h3">Lorem ipsum dolor sit amet?</h1>
+                  </header><!-- /.bit-header -->
+
+                  <div class="bit-entry">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div><!-- /.bit-entry -->
+                </div><!-- /.content-wrap -->
+              </div>
+            </div><!-- /.row -->
+
+            <footer class="bit-metadata">
+              <ul class="list-unstyled">
+                <li class="text-success"><i class="fa fa-check"></i>Solved</li>
+                <li><i class="fa fa-clock-o"></i>2 min ago</li>
+                <li><i class="fa fa-comment"></i>2 Answer</li>
+                <li class="list-view"><i class="fa fa-user fa-1X"></i>20 Views</li>
+                <li class="text-warning"><i class="fa fa-star"></i>5</li>
+                <li><i class="fa fa-folder"></i>Html</li>
+              </ul>
+
+              <ul class="list-unstyled button-wrap">
+                <button class="btn btn-primary">
+                  <i class="fa fa-question"></i>
+                  <span class="btn-text">Question</span>
+                </button>
+
+                <button class="btn btn-default">
+                  <i class="fa fa-thumbs-down"></i>
+                  <span class="btn-text">Report</span>
+                </button>
+              </ul>
+            </footer><!-- /.bit-metadata -->
+          </article><!-- /.question -->
+
+          <article class="question-answer-bit">
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="image-wrap">
+                  <a href="#">
+                    <img src="http://placehold.it/800x800" class="img-responsive img-circle">
+                  </a>
+                </div><!-- /.image-wrap -->
+              </div>
+
+              <div class="col-xs-8">
+                <div class="content-wrap">
+                  <header class="bit-header">
+                    <h1 class="bit-title h3">Lorem ipsum dolor sit amet?</h1>
+                  </header><!-- /.bit-header -->
+
+                  <div class="bit-entry">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div><!-- /.bit-entry -->
+                </div><!-- /.content-wrap -->
+              </div>
+            </div><!-- /.row -->
+
+            <footer class="bit-metadata">
+              <ul class="list-unstyled">
+                <li class="text-success"><i class="fa fa-check"></i>Solved</li>
+                <li><i class="fa fa-clock-o"></i>2 min ago</li>
+                <li><i class="fa fa-comment"></i>2 Answer</li>
+                <li class="list-view"><i class="fa fa-user fa-1X"></i>20 Views</li>
+                <li class="text-warning"><i class="fa fa-star"></i>5</li>
+                <li><i class="fa fa-folder"></i>Html</li>
+              </ul>
+
+              <ul class="list-unstyled button-wrap">
+                <button class="btn btn-primary">
+                  <i class="fa fa-question"></i>
+                  <span class="btn-text">Question</span>
+                </button>
+
+                <button class="btn btn-default">
+                  <i class="fa fa-thumbs-down"></i>
+                  <span class="btn-text">Report</span>
+                </button>
+              </ul>
+            </footer><!-- /.bit-metadata -->
+          </article><!-- /.question -->
+
+          <article class="question-answer-bit">
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="image-wrap">
+                  <a href="#">
+                    <img src="http://placehold.it/800x800" class="img-responsive img-circle">
+                  </a>
+                </div><!-- /.image-wrap -->
+              </div>
+
+              <div class="col-xs-8">
+                <div class="content-wrap">
+                  <header class="bit-header">
+                    <h1 class="bit-title h3">Lorem ipsum dolor sit amet?</h1>
+                  </header><!-- /.bit-header -->
+
+                  <div class="bit-entry">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div><!-- /.bit-entry -->
+                </div><!-- /.content-wrap -->
+              </div>
+            </div><!-- /.row -->
+
+            <footer class="bit-metadata">
+              <ul class="list-unstyled">
+                <li class="text-success"><i class="fa fa-check"></i>Solved</li>
+                <li><i class="fa fa-clock-o"></i>2 min ago</li>
+                <li><i class="fa fa-comment"></i>2 Answer</li>
+                <li class="list-view"><i class="fa fa-user fa-1X"></i>20 Views</li>
+                <li class="text-warning"><i class="fa fa-star"></i>5</li>
+                <li><i class="fa fa-folder"></i>Html</li>
+              </ul>
+
+              <ul class="list-unstyled button-wrap">
+                <button class="btn btn-primary">
+                  <i class="fa fa-question"></i>
+                  <span class="btn-text">Question</span>
+                </button>
+
+                <button class="btn btn-default">
+                  <i class="fa fa-thumbs-down"></i>
+                  <span class="btn-text">Report</span>
+                </button>
+              </ul>
+            </footer><!-- /.bit-metadata -->
+          </article><!-- /.question -->
+
+          <article class="question-answer-bit">
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="image-wrap">
+                  <a href="#">
+                    <img src="http://placehold.it/800x800" class="img-responsive img-circle">
+                  </a>
+                </div><!-- /.image-wrap -->
+              </div>
+
+              <div class="col-xs-8">
+                <div class="content-wrap">
+                  <header class="bit-header">
+                    <h1 class="bit-title h3">Lorem ipsum dolor sit amet?</h1>
+                  </header><!-- /.bit-header -->
+
+                  <div class="bit-entry">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div><!-- /.bit-entry -->
+                </div><!-- /.content-wrap -->
+              </div>
+            </div><!-- /.row -->
+
+            <footer class="bit-metadata">
+              <ul class="list-unstyled">
+                <li class="text-success"><i class="fa fa-check"></i>Solved</li>
+                <li><i class="fa fa-clock-o"></i>2 min ago</li>
+                <li><i class="fa fa-comment"></i>2 Answer</li>
+                <li class="list-view"><i class="fa fa-user fa-1X"></i>20 Views</li>
+                <li class="text-warning"><i class="fa fa-star"></i>5</li>
+                <li><i class="fa fa-folder"></i>Html</li>
+              </ul>
+
+              <ul class="list-unstyled button-wrap">
+                <button class="btn btn-primary">
+                  <i class="fa fa-question"></i>
+                  <span class="btn-text">Question</span>
+                </button>
+
+                <button class="btn btn-default">
+                  <i class="fa fa-thumbs-down"></i>
+                  <span class="btn-text">Report</span>
+                </button>
+              </ul>
+            </footer><!-- /.bit-metadata -->
+          </article><!-- /.question -->
+        </div><!-- /.questions-list -->
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer id="contentinfo" class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="site-info">
+          <p class="copyright-text">Copyright &copy; 2015 Q &amp; A</p><!-- /.copyright-text -->
+        </div><!-- /.site-info -->
+      </div>
+
+      <div class="col-md-8">
+        <div class="footer-links">
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Ask Question</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">User</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div><!-- /.footer-links -->
+      </div>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div><!-- /#contentinfo .site-footer -->
+
+
