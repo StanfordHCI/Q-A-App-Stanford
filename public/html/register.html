@@ -1,0 +1,189 @@
+﻿<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<![endif]-->
+	<title>Home</title>
+	<link href="assets/css/style.css" rel="stylesheet" />
+	<!-- BOOTSTRAP STYLE SHEET -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet" />
+	<!-- FONT-AWESOME STYLE SHEET FOR BEAUTIFUL ICONS -->
+	<link href="assets/css/font-awesome.css" rel="stylesheet" />
+	<!-- CUSTOM STYLE CSS -->
+</head>
+
+<body>
+	<div class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="col-md-12">
+				<div class="col-md-2">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<a class="navbar-brand" href="home.html"><img src="assets/img/qa_logo.jpg" alt="Q &amp; A"></a>
+					</div>
+				</div>
+
+				<div class="col-md-10">
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav ">
+							<li><a href="home.html">HOME</a></li>
+							<li><a href="ask-question.html">Ask Question</a></li>
+							<li><a href="single-question.html">Question</a></li>
+							<li><a href="user-questions.html">User</a></li>
+						</ul>
+					</div>
+
+					<div class="contact">
+						<ul>
+							<li><i class="fa fa-user"></i><a href="#">Signout</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="btn-group btn-breadcrumb">
+		 <div class="container">
+						<a href="#">Home</a>
+						<a href="#">Pages</a>
+						<a class="link" href="#">Login</a>
+				</div>
+	</div>
+		<!-- NAVBAR CODE END -->
+
+
+<div class="container hidden-xs spacer"></div>
+
+	 <div class="container reg-height">
+	 
+	 <div class="row">
+	 	<div class="col-lg-6 col-md-6 question login">
+	 		<h3 style="margin-top:-10px;">Login</h3>
+	 		<hr>
+
+	 		<form>
+	 			<div class="form-group">
+	 				<div class="inner-addon left-addon">
+	 					<i class="glyphicon glyphicon-user"></i>
+	 					<input type="email" class="form-control no-radius theme-form" id="username-input" placeholder="Enter username">
+	 				</div>
+	 			</div>
+
+	 			<div class="form-group">
+	 				<div class="inner-addon left-addon">
+	 					<i class="glyphicon glyphicon-lock"></i>
+	 					<input type="password" class="form-control no-radius theme-form" id="password-input" placeholder="Password">
+	 				</div>
+	 			</div>
+
+	 			<button type="submit" class="btn btn-default long-botton theme-button-white no-radius">Login</button>
+	 		</form>
+	 	</div>
+
+	 	<div class="col-lg-1 col-md-1"></div>
+		
+		<div class="col-lg-5 col-md-5 question login">
+			<h3 style="margin-top:-10px;">Register Now</h3>
+			<p>
+			
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ullamcorper in quam auctor pharetra. Etiam pulvinar, lectus quis rutrum tempor, turpis urna fringilla diam,
+			</p>
+			
+		<hr>
+		<button  type="button" class="btn btn-default btn-lg theme-button-white no-radius"  data-toggle="modal" data-target="#myModal">Create an account</button>
+		
+		</div>
+	 
+		
+	 </div>
+
+	 </div>
+	
+	<footer id="contentinfo" class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="site-info">
+						<p class="copyright-text">Copyright &copy; 2015 Q &amp; A</p><!-- /.copyright-text -->
+					</div><!-- /.site-info -->
+				</div>
+
+				<div class="col-md-8">
+					<div class="footer-links">
+						<ul class="list-unstyled">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Ask Question</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">User</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+					</div><!-- /.footer-links -->
+				</div>
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</div><!-- /#contentinfo .site-footer -->
+	
+	
+	<div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content question no-radius">
+			<div class="modal-header" style="border:none">
+				<button type="button" class="close" style="color:red" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h3 id="myModalLabel">Register Now</h3>
+				<hr style="border-bottom:3px solid grey">
+			</div>
+			<div class="modal-body">
+			<form>
+			<div class="form-group">
+		<label for="username">Username*</label>
+		<input type="email" class="form-control theme-form no-radius" id="username">
+	</div>
+	<div class="form-group">
+		<label for="email">Email address*</label>
+		<input type="email" class="form-control theme-form no-radius" id="email">
+	</div>
+	<div class="form-group">
+		<label for="Password1">Password*</label>
+		<input type="password" class="form-control theme-form no-radius" id="Password1" >
+	</div>
+	<div class="form-group">
+		<label for="Password2">Confirm Password*</label>
+		<input type="password" class="form-control theme-form no-radius" id="Password2" >
+	</div>
+
+			</div>
+			<div class="modal-footer" style="border:none" >
+				<p class="text-center" ><button type="button" class="btn btn-default btn-lg long-botton theme-button-red no-radius " style="color:white" data-dismiss="modal">Sign Up</button></p>
+		</form>
+			</div>
+		</div>
+	</div>
+</div>
+		<!-- CONATINER END -->
+
+		<!-- REQUIRED SCRIPTS FILES -->
+		<!-- CORE JQUERY FILE -->
+		<script src="assets/js/jquery-1.11.1.js"></script>
+		<!-- REQUIRED BOOTSTRAP SCRIPTS -->
+		<script src="assets/js/bootstrap.js"></script>
+		<script>
+		$( document ).ready(function() {
+		 $('#myModal').modal('show');
+});
+	 
+	 
+	 
+	 
+</body>
+
+</html>
