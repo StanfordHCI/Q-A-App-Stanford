@@ -29,26 +29,7 @@
   section
     .row
       #about-admin.col-md-4
-        .alert.alert-info
-          h3
-            | Login
-            span
-          .col-md-4
-          .col-md-12
-            form
-              .form-group
-                .inner-addon.left-addon
-                  i.glyphicon.glyphicon-user
-                  input#username-input.form-control.no-radius.theme-form placeholder=("Enter username") type="email"
-              .form-group
-                .inner-addon.left-addon
-                  i.glyphicon.glyphicon-lock
-                  input#password-input.form-control.no-radius.theme-form placeholder="Password" type="password"
-              .checkbox
-                label
-                  input type="checkbox"
-                  | Remember me
-              button.btn.btn-default.long-botton.theme-button-white.no-radius type="submit"  Login
+        = render 'users/user'
         .alert.alert-info
           h3 Tags
           ul.tags

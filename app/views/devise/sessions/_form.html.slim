@@ -1,0 +1,14 @@
+= form_for(:user, as: :user, url: session_path(:user)) do |f|
+  .form-group
+    .inner-addon.left-addon
+      i.glyphicon.glyphicon-user
+      = f.text_field :login, id: 'username-input', class: 'form-control no-radius theme-form', placeholder: 'Enter username or email', autofocus: true
+  .form-group
+    .inner-addon.left-addon
+      i.glyphicon.glyphicon-lock
+      = f.password_field :password, autocomplete: 'off', class: 'form-control no-radius theme-form', id: 'password-input'
+  .checkbox
+    label
+      = f.check_box :remember_me
+      | Remember me
+  = f.submit 'Login', class: 'btn btn-default long-botton theme-button-white no-radius'

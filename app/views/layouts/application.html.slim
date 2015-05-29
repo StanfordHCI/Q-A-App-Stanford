@@ -13,6 +13,7 @@ html
 
   body class=(yield :body_class)
     = render 'layouts/navigation'
+    = render 'layouts/alerts'
     = yield
     = render 'layouts/footer'
 
