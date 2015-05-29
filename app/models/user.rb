@@ -11,6 +11,8 @@ class User < ActiveRecord::Base
 
   validates :username, :presence => true, :uniqueness => { :case_sensitive => false }
 
+  mount_uploader :avatar, AvatarUploader
+
   def self.find_first_by_auth_conditions(warden_conditions)
     conditions = warden_conditions.dup
     if login = conditions.delete(:login)
@@ -27,4 +29,5 @@ class User < ActiveRecord::Base
   def login
     @login || self.username || self.email
   end
+
 end
