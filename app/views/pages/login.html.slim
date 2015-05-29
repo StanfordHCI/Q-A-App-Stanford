@@ -1,0 +1,23 @@
+.container
+  .row
+    .col-sm-6
+      .panel.panel-default
+        .panel-heading Login
+        .panel-body
+          = render 'devise/sessions/form'
+    .col-sm-6
+      .panel.panel-default
+        .panel-heading Register Now
+        .panel-body
+          p Lorem Ipsum is simply dummy text of the printing and typesetting industry
+          = link_to 'Create an account', '#', class: 'btn btn-default btn-lg', data: {toggle: 'modal', target: '#registration-modal'}
+
+.modal.fade#registration-modal
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close aria-label="Close" data-dismiss="modal" type="button"
+          span aria-hidden="true"  &times;
+        h4.modal-title Register Now
+      .modal-body
+        = render 'devise/registrations/form'
