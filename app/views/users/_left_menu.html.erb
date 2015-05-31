@@ -1,0 +1,36 @@
+  <div class="alert alert-info">
+    <h3>My Profile<span><%= link_to 'Edit Profile', edit_user_path(@user) %></span></h3>
+    <div class="col-md-4">
+    
+    <%= image_tag @user.avatar.url, class: 'img-rounded img-responsive', alt: 'Picture' %>
+    <h5><%= @user.username %></h5>
+    </div>
+    <div class="col-md-8">
+    <ul class="q_list">
+      <li>No of question asked<span><%= @user.questions.count %></span></li>
+      <li>No of question responded<span><%= @user.answers.count %></span></li>
+    </ul>
+    </div>
+  </div>
+  <div class="alert alert-info">
+    <h3>Stats</h3>
+    <ul class="stats">
+      <li><i class="fa fa-question-circle"></i>Question<span>(<%= @user.questions.count %>)</span></li>
+      <li><i class="fa fa-comment"></i>Answer<span>(<%= @user.answers.count %>)</span></li>
+    </ul>
+  </div>
+  <div class="alert alert-info">
+    <h3>Tags</h3>
+    <ul class="tags">
+      <li><a href="">Project</a></li>
+      <li><a href="">Portfolio</a></li>
+      <li><a href="">UI</a></li>
+      <li><a href="">HTML</a></li>
+    </ul>
+    <ul class="tags">
+      <li><a href="">Project</a></li>
+      <li><a href="">Portfolio</a></li>
+      <li><a href="">UI</a></li>
+      <li><a href="">HTML</a></li>
+    </ul>
+  </div>

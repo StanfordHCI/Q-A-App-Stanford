@@ -18,41 +18,7 @@
     <section>
       <div class="row">
         <div class="col-md-4" id="about-admin">
-          <div class="alert alert-info">
-            <h3>My Profile<span><%= link_to 'Edit Profile', edit_user_path(current_user) %></span></h3>
-            <div class="col-md-4">
-              <%= image_tag current_user.avatar.url, class: 'img-rounded img-responsive', alt: 'Picture' %>
-              <h5><%= current_user.username %></h5>
-            </div>
-            <div class="col-md-8">
-              <ul class="q_list">
-                <li>No of question asked<span>21</span></li>
-                <li>No of question responded<span>29</span></li>
-              </ul>
-            </div>
-          </div>
-          <div class="alert alert-info">
-            <h3>Stats</h3>
-            <ul class="stats">
-              <li><i class="fa fa-question-circle"></i>Question<span>(10)</span></li>
-              <li><i class="fa fa-comment"></i>Answer<span>(30)</span></li>
-            </ul>
-          </div>
-          <div class="alert alert-info">
-            <h3>Tags</h3>
-            <ul class="tags">
-              <li><a href="">Project</a></li>
-              <li><a href="">Portfolio</a></li>
-              <li><a href="">UI</a></li>
-              <li><a href="">HTML</a></li>
-            </ul>
-            <ul class="tags">
-              <li><a href="">Project</a></li>
-              <li><a href="">Portfolio</a></li>
-              <li><a href="">UI</a></li>
-              <li><a href="">HTML</a></li>
-            </ul>
-          </div>
+          <%= render 'left_menu' %>
         </div>
         <div class="col-md-8">
           <div class="col-md-12" id="about-admin">
@@ -63,7 +29,13 @@
 
                 <!--Buttons for larger screen-->
                 <div class="pull-left">
-                <h2 style="border: 0"><b><%= @question.title %></b> </h2>
+                  <h2 style="border: 0"><b><%= @question.title %></b></h2>
+
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-social btn-facebook">
+                    Answer
+                  </a>                  
                 </div>
                 <br>
                 
@@ -157,30 +129,50 @@
                 </div>
                 <!--Another Answer-->
                 <div>
-                <a class="pull-left" href="#">
-                <br>
-                <img class="media-object img-circle user-profile" src="/assets/admin.jpg" alt="profile">
-                </a>
-                <div class="media-body">
-                  <br>
-                  <br>
-                  <h3 style="border:0px">Admin</h3>
-                  <div class="pull-left col-md-12">
-                  <span class="col-md-1">
-                    <i class="fa fa-chevron-up"></i>
-                    <i class="fa fa-chevron-down"></i>
-                  </span>
-                  <span class="col-md-1">+6</span>
-                  <span class="col-md-7"><i class="fa fa-clock-o"></i> May 15, 2015 at 7:00 PM</span>
-                  <span ><i class="fa fa-reply reply">Reply</i></span>
+                  <a class="pull-left" href="#">
+                    <br>
+                    <img class="media-object img-circle user-profile" src="/assets/admin.jpg" alt="profile">
+                  </a>
+                  <div class="media-body">
+                    <br><br>
+                    <h3 style="border:0px">Admin</h3>
+                    <div class="pull-left col-md-12">
+                      <span class="col-md-1">
+                        <i class="fa fa-chevron-up"></i>
+                        <i class="fa fa-chevron-down"></i>
+                      </span>
+                      <span class="col-md-1">+6</span>
+                      <span class="col-md-7"><i class="fa fa-clock-o"></i> May 15, 2015 at 7:00 PM</span>
+                      <span ><i class="fa fa-reply reply">Reply</i></span>
+                    </div>
+                    <br>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <br><br>            
                   </div>
-                  <br>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                  <br>
-                  <br>            
                 </div>
-                </div>
+
               </div>
+
+          <div class="col-md-12" id="about-admin">
+            <div class="alert alert-info">
+              <h2>Answer</h2>
+              <%= form_for new_question_answer_path(@question), html: { class: 'ask' } do |f| %>                
+                <div class=" col-md-12">
+                  <label for="details" class="">Comment <i class="fa fa-asterisk"></i></label>
+                  <div class="col-sm-12">
+                    <%= f.text_area :details, class: 'form-control col-sm-4 no-radius theme-form', id: 'details', placeholder: 'Input Description', style: 'height:100px', required: true %>
+                  </div>
+                </div>
+                
+                <div class=" col-md-12">
+                  <button class="btn btn-default" id="submit">Post Your Answer</button>
+                </div>
+                
+              <% end %>
+            </div>
+          </div>
+
+
             </div>
           </div>
         </div>

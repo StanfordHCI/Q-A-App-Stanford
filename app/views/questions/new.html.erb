@@ -18,35 +18,7 @@
     <section>
       <div class="row">
         <div class="col-md-4" id="about-admin">
-          <div class="alert alert-info">
-            <h3>My Profile<span><%= link_to 'Edit Profile', edit_user_path(current_user) %></span></h3>
-            <div class="col-md-4">
-              <%= image_tag current_user.avatar.url, class: 'img-rounded img-responsive', alt: 'Picture' %>
-              <h5><%= current_user.username %></h5>
-            </div>
-            <div class="col-md-8">
-              <ul class="q_list">
-                <li>No of question asked<span>21</span></li>
-                <li>No of question responded<span>29</span></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="alert alert-info">
-            <h3>Tags</h3>
-            <ul class="tags">
-              <li><a href="">Project</a></li>
-              <li><a href="">Portfolio</a></li>
-              <li><a href="">UI</a></li>
-              <li><a href="">HTML</a></li>
-            </ul>
-            <ul class="tags">
-              <li><a href="">Project</a></li>
-              <li><a href="">Portfolio</a></li>
-              <li><a href="">UI</a></li>
-              <li><a href="">HTML</a></li>
-            </ul>
-          </div>
+          <%= render 'left_menu' %>
         </div>
         <div class="col-md-8">
           <div class="col-md-12" id="about-admin">
