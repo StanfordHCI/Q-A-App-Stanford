@@ -80,9 +80,9 @@ a,img{
 .contact li, .btn-breadcrumb a {
   display: inline;
   list-style: none;
-  background: url('../img/li_bg.png') no-repeat center right;
-  padding: 0 8px;
-  color: #fff;
+	background: url('/assets/li_bg.png') no-repeat center right;
+	padding: 0 8px;
+	color: #fff;
 }
 .contact li:last-child, .btn-breadcrumb a:last-child{
   background: none;

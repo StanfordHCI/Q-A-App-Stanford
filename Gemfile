@@ -8,6 +8,7 @@ gem 'font-awesome-sass'
 gem 'jquery-rails'
 gem 'mysql2'
 gem 'slim-rails'
+gem 'carrierwave'
 
 group :doc do
   gem 'sdoc', '~> 0.4.0'
