@@ -16,7 +16,12 @@ html
     = render 'layouts/navigation'
     = yield :page_header
     = render 'layouts/alerts'
-    = yield
+    .container
+      br
+      .col-sm-4
+        = render 'layouts/sidebar'
+      .col-sm-8
+        = yield
     = render 'layouts/footer'
 
     = javascript_include_tag 'application'
