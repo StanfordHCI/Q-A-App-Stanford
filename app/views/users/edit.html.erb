@@ -1,60 +1,35 @@
-
-  <!-- <div class="btn-group btn-breadcrumb">
-     <div class="container">
-      <a href="#">Home</a>
-      <a href="#">User</a>
-      <a class="link" href="#">Edit Profile</a>
-    </div>
-  </div> -->
-  <!-- NAVBAR CODE END -->
-
-
-  <div class="container">
-    <section>
-      <div class="row">
-      <div class="col-md-4" id="about-admin">
-        <%= render 'left_menu' %>
-      </div>
-        <div class="col-md-8">
-        <div class="col-md-12" id="about-admin">
-          <div class="alert alert-info">
-            <h2>Edit Profile</h2>
-            <%= form_for @user, html: { class: 'edit' } do |f| %>
-              <div class="col-md-6">
-                <%= f.text_field :first_name, class: 'span3', placeholder: 'First Name' %>
-                <%= f.email_field :email, class: 'span3', placeholder: 'Email', required: true %>
-                <%= f.password_field :password, class: 'span3', placeholder: 'Password' %>
-                <%= f.text_field :country, class: 'span3', placeholder: 'Country' %>
-              </div>
-              <div class="col-md-6">
-                <%= f.text_field :last_name, class: 'span3', placeholder: 'Last Name' %>
-                <%= f.text_field :website, class: 'span3', placeholder: 'Website' %>
-                <%= f.password_field :password_confirmation, class: 'span3', placeholder: 'Confirm Password' %>
-                <!-- <input type="text" class="span3" placeholder="Preferred Freelance Website" > -->
-              </div>
-              <div class="col-md-12">
-                <div class="col-md-2">
-                  <i class="fa fa-user"></i>
-                </div>
-                <div class="col-md-10">
-                  <label>Profile Picture</label>
-                  <%= f.file_field :avatar %>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <label>About Yourself</label>
-                    <%= f.text_area :summary, class: 'input-xlarge span5', id: 'message', rows: '10', required: true %>
-                    <%= f.submit 'Update', class: 'btn btn-primary pull-right' %>
-                  </div>
-                </div>
-              </div>
-            <% end %>
+<div class="col-md-12" id="about-admin">
+  <div class="alert alert-info">
+    <h2>Edit Profile</h2>
+    <%= form_for @user, html: {class: 'edit'} do |f| %>
+        <div class="col-md-6">
+          <%= f.text_field :first_name, class: 'span3', placeholder: 'First Name' %>
+          <%= f.email_field :email, class: 'span3', placeholder: 'Email', required: true %>
+          <%= f.password_field :password, class: 'span3', placeholder: 'Password' %>
+          <%= f.text_field :country, class: 'span3', placeholder: 'Country' %>
+        </div>
+        <div class="col-md-6">
+          <%= f.text_field :last_name, class: 'span3', placeholder: 'Last Name' %>
+          <%= f.text_field :website, class: 'span3', placeholder: 'Website' %>
+          <%= f.password_field :password_confirmation, class: 'span3', placeholder: 'Confirm Password' %>
+          <input type="text" class="span3" placeholder="Preferred Freelance Website">
+        </div>
+        <div class="col-md-12">
+          <div class="col-md-2">
+            <i class="fa fa-user"></i>
+          </div>
+          <div class="col-md-10">
+            <label>Profile Picture</label>
+            <%= f.file_field :avatar %>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <label>About Yourself</label>
+              <%= f.text_area :summary, class: 'input-xlarge span5', id: 'message', rows: '10', required: true %>
+              <%= f.submit 'Update', class: 'btn btn-primary pull-right' %>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- ROW END -->
-
-
-    </section>
-    <!-- SECTION END -->
+    <% end %>
   </div>
+</div>

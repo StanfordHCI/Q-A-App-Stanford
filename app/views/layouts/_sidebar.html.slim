@@ -1,0 +1,38 @@
+.panel.panel-default
+  .panel-heading
+    = user_signed_in? ? 'User Profile' : 'Login'
+    - if user_signed_in?
+      .pull-right
+        = link_to 'Edit Profile', edit_user_path(current_user)
+  .panel-body
+    - if user_signed_in?
+      .row
+        .col-md-4
+          = image_tag current_user.avatar.url, class: 'img-rounded img-responsive', alt: 'Picture'
+          h5= current_user.username
+        .col-md-8
+          ul.q_list
+            li
+              | No of question asked
+              span= current_user.questions.count
+            li
+              | No of question responded
+              span= current_user.answers.count
+      = link_to 'My Account', user_path(current_user), class: 'btn btn-primary'
+      '
+      = link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'btn btn-danger'
+    - else
+      = render 'devise/sessions/form'
+
+- if user_signed_in?
+  .alert.alert-info
+    h3 Stats
+    ul.stats
+      li
+        i.fa.fa-question-circle
+        | Question
+        span= "(#{current_user.questions.count})"
+      li
+        i.fa.fa-comment
+        | Answer
+        span= "(#{current_user.answers.count})"

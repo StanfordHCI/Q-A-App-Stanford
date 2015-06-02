@@ -1,84 +1,66 @@
-
 <%= content_for :styles do %>
-  <!-- TAGSINPUT STYLE CSS -->
-  <link href="/assets/bootstrap-tagsinput.min.css" rel="stylesheet" />
+    <!-- TAGSINPUT STYLE CSS -->
+    <link href="/assets/bootstrap-tagsinput.min.css" rel="stylesheet"/>
 <% end %>
 
-  <!-- <div class="btn-group btn-breadcrumb">
-     <div class="container">
-      <a href="#">Home</a>
-      <a href="#">User</a>
-      <a class="link" href="#">Ask Question</a>
-    </div>
-  </div> -->
-  <!-- NAVBAR CODE END -->
+<div class="col-md-12" id="about-admin">
+  <div class="alert alert-info">
+    <h2>Ask Question</h2>
 
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s</p>
+    <%= form_for @question, html: {class: 'ask'} do |f| %>
+        <div class=" col-md-12">
+          <label for="title" class="col-sm-3">Question Title <i class="fa fa-asterisk"></i></label>
 
-  <div class="container">
-    <section>
-      <div class="row">
-        <div class="col-md-4" id="about-admin">
-          <%= render 'left_menu' %>
+          <div class="col-sm-8">
+            <%= f.text_field :title, class: 'form-control col-sm-4 no-radius theme-form', id: 'title', placeholder: 'Question Title', required: true %>
+          </div>
         </div>
-        <div class="col-md-8">
-          <div class="col-md-12" id="about-admin">
-            <div class="alert alert-info">
-              <h2>Ask Question</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-              <%= form_for @question, html: { class: 'ask' } do |f| %>
-                <div class=" col-md-12">
-                  <label for="title" class="col-sm-3">Question Title <i class="fa fa-asterisk"></i></label>
-                  <div class="col-sm-8">
-                    <%= f.text_field :title, class: 'form-control col-sm-4 no-radius theme-form', id: 'title', placeholder: 'Question Title', required: true %>                                                                                                                                                                                         
-                  </div>
-                </div>
-                <div class=" col-md-12">
-                  <label for="tags" class="col-sm-3">Tags <i class="fa fa-asterisk"></i></label>
-                  <div class="col-sm-8">
-                    <%= f.text_field :tag_list, value: '', class: 'form-control col-sm-4 no-radius theme-form', id: 'tags', 'data-role' => 'tagsinput', required: true %>
-                  </div>
-                </div>
-                <!-- <div class=" col-md-12">
+        <div class=" col-md-12">
+          <label for="tags" class="col-sm-3">Tags <i class="fa fa-asterisk"></i></label>
+
+          <div class="col-sm-8">
+            <%= f.text_field :tag_list, value: '', class: 'form-control col-sm-4 no-radius theme-form', id: 'tags', 'data-role' => 'tagsinput', required: true %>
+          </div>
+        </div>
+        <!-- <div class=" col-md-12">
                   <label for="category" class="col-sm-3">Category <i class="fa fa-asterisk"></i></label>
                   <div class="col-sm-8 dropdown">
-                    <%= f.select :category_id, options_from_collection_for_select(Category.all, :id, :name),{ prompt: 'Select a category' }, class: 'form-control no-radius theme-form' %>
+                    <%= f.select :category_id, options_from_collection_for_select(Category.all, :id, :name), {prompt: 'Select a category'}, class: 'form-control no-radius theme-form' %>
                     <em>Lorep Ipsum is simply dummy text</em>
                   </div>
                   <br/>
                 </div> -->
-                <div class=" col-md-12">
-                  <label for="Poll" class="col-sm-3">Poll</label>
-                  <div class="col-sm-4">
-                    <%= f.check_box :is_poll, id: 'poll', placeholder: 'Poll' %> This question is a poll?
-                  </div>
-                  <div class="col-sm-5">Lorep Ipsum is simply dummy text</div>
-                </div>
+        <div class=" col-md-12">
+          <label for="Poll" class="col-sm-3">Poll</label>
 
-                <div class=" col-md-12">
-                  <label for="details" class="col-sm-3">Details <i class="fa fa-asterisk"></i></label>
-                  <div class="col-sm-8">
-                    <%= f.text_area :details, class: 'form-control col-sm-4 no-radius theme-form', id: 'details', placeholder: 'Input Description', style: 'height:100px', required: true %>
-                  </div>
-                </div>
-                
-                <div class=" col-md-12">
-                  <button class="btn btn-default" id="submit">Publish Your Question</button>
-                </div>
-                
-              <% end %>
-            </div>
+          <div class="col-sm-4">
+            <%= f.check_box :is_poll, id: 'poll', placeholder: 'Poll' %> This question is a poll?
+          </div>
+          <div class="col-sm-5">Lorep Ipsum is simply dummy text</div>
+        </div>
+
+        <div class=" col-md-12">
+          <label for="details" class="col-sm-3">Details <i class="fa fa-asterisk"></i></label>
+
+          <div class="col-sm-8">
+            <%= f.text_area :details, class: 'form-control col-sm-4 no-radius theme-form', id: 'details', placeholder: 'Input Description', style: 'height:100px', required: true %>
           </div>
         </div>
-      </div>
-      <!-- ROW END -->
-    </section>
-    <!-- SECTION END -->
+
+        <div class=" col-md-12">
+          <button class="btn btn-default" id="submit">Publish Your Question</button>
+        </div>
+
+    <% end %>
   </div>
+</div>
 
 
 <%= content_for :scripts do %>
-  <!-- REQUIRED BOOTSTRAP TAGINPUT SCRIPTS -->
-  <script src="/assets/bootstrap-tagsinput.min.js"></script>
-  <!-- REQUIRED BOOTSTRAP FILEINPUT SCRIPTS -->
-  <script src="/assets/bootstrap-filestyle.min.js"></script>
+    <!-- REQUIRED BOOTSTRAP TAGINPUT SCRIPTS -->
+    <script src="/assets/bootstrap-tagsinput.min.js"></script>
+    <!-- REQUIRED BOOTSTRAP FILEINPUT SCRIPTS -->
+    <script src="/assets/bootstrap-filestyle.min.js"></script>
 <% end %>
