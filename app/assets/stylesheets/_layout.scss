@@ -80,3 +80,38 @@ nav.navbar {
     }
   }
 }
+
+footer {
+  background-color: $brand-color;
+  .footer-info {
+    .quick-links {
+      h3 {
+        padding-left: 115px;
+      }
+      ul {
+        padding-left: 135px;
+        li {
+          list-style-type: none;
+          font-size: 18px;
+          margin-bottom: 11px;
+
+          a {
+            color: $text-color;
+          }
+        }
+      }
+    }
+  }
+
+  .social-info {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+
+    a {
+      color: #ffffff;
+      padding: 5px;
+      font-size: 18px;
+    }
+  }
+}
