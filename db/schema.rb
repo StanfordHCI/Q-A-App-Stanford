@@ -11,16 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150531190001) do
+ActiveRecord::Schema.define(version: 20150601223936) do
 
   create_table "answers", force: :cascade do |t|
     t.integer  "question_id",     limit: 4
-    t.boolean  "accepted",        limit: 1
+    t.boolean  "accepted",        limit: 1,     default: false
     t.integer  "user_id",         limit: 4
-    t.integer  "up_vote_count",   limit: 4
-    t.integer  "down_vote_count", limit: 4
-    t.datetime "created_at",                    null: false
-    t.datetime "updated_at",                    null: false
+    t.integer  "up_vote_count",   limit: 4,     default: 0
+    t.integer  "down_vote_count", limit: 4,     default: 0
+    t.datetime "created_at",                                    null: false
+    t.datetime "updated_at",                                    null: false
     t.text     "details",         limit: 65535
   end
 
@@ -36,11 +36,11 @@ ActiveRecord::Schema.define(version: 20150531190001) do
     t.text     "details",         limit: 65535
     t.integer  "category_id",     limit: 4
     t.integer  "user_id",         limit: 4
-    t.integer  "views_count",     limit: 4
-    t.integer  "up_vote_count",   limit: 4
-    t.integer  "down_vote_count", limit: 4
-    t.datetime "created_at",                    null: false
-    t.datetime "updated_at",                    null: false
+    t.integer  "views_count",     limit: 4,     default: 0
+    t.integer  "up_vote_count",   limit: 4,     default: 0
+    t.integer  "down_vote_count", limit: 4,     default: 0
+    t.datetime "created_at",                                null: false
+    t.datetime "updated_at",                                null: false
   end
 
   create_table "questions_tags", force: :cascade do |t|
