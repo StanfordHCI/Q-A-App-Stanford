@@ -30,46 +30,45 @@ ul.nav.nav-tabs.home-nav
     //   a href="#"  No Answers
   br
 .questions-list.clearfix
-  - if user_signed_in?
-    - recent_questions.each do |question|
-      article.question-answer-bit
-      .row
-        .col-xs-4
-          .image-wrap
-            = link_to user_path(question.user) do
-              = image_tag question.user.avatar, class: 'img-responsive img-circle'
-        .col-xs-8
-          .content-wrap
-            header.bit-header
-              h1.bit-title.h3
-                = question.title
-            .bit-entry
-              p
+  - recent_questions.each do |question|
+    article.question-answer-bit
+    .row
+      .col-xs-4
+        .image-wrap
+          = link_to user_path(question.user) do
+            = image_tag question.user.avatar, class: 'img-responsive img-circle'
+      .col-xs-8
+        .content-wrap
+          header.bit-header
+            h1.bit-title.h3
+              = question.title
+          .bit-entry
+            p
+              = question.details
                 = question.details
-                  = question.details
-      footer.bit-metadata
-        ul.list-unstyled
-          // li.text-success
-          //  i.fa.fa-check
-          //  | Solved
-          li
-            i.fa.fa-clock-o
-            |
-            = time_ago_in_words question.created_at
-            |  ago
-          li
-            i.fa.fa-comment
-            |
-            = question.answers.count
-            |  Answer
-          li.list-view
-            i.fa.fa-user.fa-1X
-            = question.views_count
-            |  Views
-        ul.list-unstyled.button-wrap
-        = link_to question, class: 'btn btn-primary'
-          i.fa.fa-question
-          span.btn-text Question
-          // button.btn.btn-default
-          //  i.fa.fa-thumbs-down
-          //  span.btn-text Report
+    footer.bit-metadata
+      ul.list-unstyled
+        // li.text-success
+        //  i.fa.fa-check
+        //  | Solved
+        li
+          i.fa.fa-clock-o
+          |
+          = time_ago_in_words question.created_at
+          |  ago
+        li
+          i.fa.fa-comment
+          |
+          = question.answers.count
+          |  Answer
+        li.list-view
+          i.fa.fa-user.fa-1X
+          = question.views_count
+          |  Views
+      ul.list-unstyled.button-wrap
+      = link_to question, class: 'btn btn-primary'
+        i.fa.fa-question
+        span.btn-text Question
+        // button.btn.btn-default
+        //  i.fa.fa-thumbs-down
+        //  span.btn-text Report
