@@ -1,30 +1,25 @@
 
   <div class="alert alert-info">
-    <h3>My Profile<span><%= link_to 'Edit Profile', edit_user_path(current_user) %></span></h3>
+    <h3>My Profile</h3>
     <div class="col-md-4">
       <%= image_tag current_user.avatar.url, class: 'img-rounded img-responsive', alt: 'Picture' %>
       <h5><%= current_user.username %></h5>
     </div>
     <div class="col-md-8">
       <ul class="q_list">
-        <li>No of question asked<span><%= current_user.questions.count %></span></li>
-        <li>No of question responded<span><%= current_user.answers.count %></span></li>
+        <li>No of questions asked<span><%= current_user.questions.count %></span></li>
+        <li>No of questions responded<span><%= current_user.answers.count %></span></li>
       </ul>
     </div>
   </div>
 
-  <div class="alert alert-info">
-    <h3>Tags</h3>
-    <ul class="tags">
-      <li><a href="">Project</a></li>
-      <li><a href="">Portfolio</a></li>
-      <li><a href="">UI</a></li>
-      <li><a href="">HTML</a></li>
-    </ul>
-    <ul class="tags">
-      <li><a href="">Project</a></li>
-      <li><a href="">Portfolio</a></li>
-      <li><a href="">UI</a></li>
-      <li><a href="">HTML</a></li>
-    </ul>
-  </div>
+  <% if params[:action] == 'show' %>
+    <div class="alert alert-info">
+      <h3>Tags</h3>
+      <ul class="tags">
+        <% @question.tags.each do |tag| %>
+          <li><a href=""><%= tag.name %></a></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
