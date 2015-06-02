@@ -9,14 +9,21 @@ class UsersController < ApplicationController
   end
 
   def update
+    success = @user.update(user_params)
+
+    if params[:user][:password].present? || params[:user][:password_confirmation].present?
+      success = @user.update(password: params[:user][:password], password_confirmation: params[:user][:password_confirmation])
+    end
+
     respond_to do |format|
-      if @user.update(user_params)
+      if success
         format.html { redirect_to @user, notice: 'Profile was successfully updated.' }
         format.json { render :show, status: :ok, location: @user }
       else
         format.html { render :edit }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
+
     end
   end
 
@@ -26,7 +33,7 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :website, :country, :avatar, :summary)
+    params.require(:user).permit(:first_name, :last_name, :email, :website, :country, :avatar, :summary)
   end
 
   def check_user
