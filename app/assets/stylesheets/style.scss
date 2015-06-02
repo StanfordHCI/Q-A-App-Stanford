@@ -1,12 +1,8 @@
+@import "variables";
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "variables";
+@import "layout";
 @import "users";
-
-*{
-  margin: 0;
-  padding: 0;
-}
 
 a,img{
   text-decoration: none;
