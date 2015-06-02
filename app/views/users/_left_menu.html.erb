@@ -1,5 +1,5 @@
   <div class="alert alert-info">
-    <h3>My Profile<span><%= link_to 'Edit Profile', edit_user_path(@user) %></span></h3>
+    <h3>My Profile<span><%= link_to 'Edit Profile', edit_user_path(@user) if user_signed_in? && current_user == @user %></span></h3>
     <div class="col-md-4">
     
     <%= image_tag @user.avatar.url, class: 'img-rounded img-responsive', alt: 'Picture' %>
@@ -17,20 +17,5 @@
     <ul class="stats">
       <li><i class="fa fa-question-circle"></i>Question<span>(<%= @user.questions.count %>)</span></li>
       <li><i class="fa fa-comment"></i>Answer<span>(<%= @user.answers.count %>)</span></li>
-    </ul>
-  </div>
-  <div class="alert alert-info">
-    <h3>Tags</h3>
-    <ul class="tags">
-      <li><a href="">Project</a></li>
-      <li><a href="">Portfolio</a></li>
-      <li><a href="">UI</a></li>
-      <li><a href="">HTML</a></li>
-    </ul>
-    <ul class="tags">
-      <li><a href="">Project</a></li>
-      <li><a href="">Portfolio</a></li>
-      <li><a href="">UI</a></li>
-      <li><a href="">HTML</a></li>
     </ul>
   </div>

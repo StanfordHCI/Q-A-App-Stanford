@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update]
+  before_action :check_user, only: [:edit, :update]
 
   def show
   end
@@ -26,5 +27,11 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :website, :country, :avatar, :summary)
+  end
+
+  def check_user
+    unless current_user == @user
+      redirect_to root_url
+    end
   end
 end
