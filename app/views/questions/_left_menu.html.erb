@@ -13,11 +13,13 @@
     </div>
   </div>
 
-  <div class="alert alert-info">
-    <h3>Tags</h3>
-    <ul class="tags">
-      <% @question.tags.each do |tag| %>
-        <li><a href=""><%= tag.name %></a></li>
-      <% end %>
-    </ul>
-  </div>
+  <% if params[:action] == 'show' %>
+    <div class="alert alert-info">
+      <h3>Tags</h3>
+      <ul class="tags">
+        <% @question.tags.each do |tag| %>
+          <li><a href=""><%= tag.name %></a></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>

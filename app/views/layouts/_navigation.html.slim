@@ -13,15 +13,15 @@
         .navbar-collapse.collapse
           ul.nav.navbar-nav.navbar-right
             li
-              a.active href="home.html"  HOME
+              = link_to 'Home', root_url, class: "active"
             li
               = link_to 'Ask Question', new_question_path
             li
               a href="#"  Question
             li
-              a href="user-questions.html"  User
+              = link_to 'User', user_path(current_user)
             li
-              a href="user-questions.html"  Contact
+              a href="#"  Contact
         /.contact
         /  ul
         /    li
