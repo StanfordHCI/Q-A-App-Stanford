@@ -44,11 +44,11 @@
                     <li><i class="fa fa-comment"></i><%= @question.answers.count %> Answer</li>
                     <li class="list-view"><i class="fa fa-user fa-1X"></i><%= @question.views_count %> Views</li>
                     <!-- <li class="text-warning"><i class="fa fa-star"></i>0</li>
-                    <li><i class="fa fa-folder"></i>Html</li> -->
+                    <li><i class="fa fa-folder"></i>Html</li>
                     <span class="pull-right">
                       <li><i class="fa fa-thumbs-o-up "></i><i class="fa fa-thumbs-o-down "></i></li>
                       <li><%= @question.up_vote_count - @question.down_vote_count %></li>
-                    </span>
+                    </span> -->
                   </ul>
 
                   <!--Buttons for smaller screen-->
@@ -73,11 +73,11 @@
                       <br><br>
                       <h3 style="border:0px"><%= answer.user.first_name %></h3>
                       <div class="pull-left col-md-12">
-                        <span class="col-md-1">
+                        <!-- <span class="col-md-1">
                           <i class="fa fa-chevron-up"></i>
                           <i class="fa fa-chevron-down"></i>
                         </span>
-                        <span class="col-md-1"><%= answer.up_vote_count - answer.down_vote_count %></span>
+                        <span class="col-md-1"><%= answer.up_vote_count - answer.down_vote_count %></span> -->
                         <span class="col-md-7"><i class="fa fa-clock-o"></i> <%= answer.created_at.strftime("%B %d, %Y at %l:%M %p") %></span>
                       </div>
                       <br>
