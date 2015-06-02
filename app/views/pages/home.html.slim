@@ -34,11 +34,12 @@ ul.nav.nav-tabs.home-nav
     - recent_questions.each do |question|
       article.question-answer-bit
       .row
-        .col-xs-4
+        .col-xs-2
           .image-wrap
             = link_to user_path(question.user) do
+              h3.center = question.user.first_name
               = image_tag question.user.avatar, class: 'img-responsive img-circle'
-        .col-xs-8
+        .col-xs-10
           .content-wrap
             header.bit-header
               h1.bit-title.h3
