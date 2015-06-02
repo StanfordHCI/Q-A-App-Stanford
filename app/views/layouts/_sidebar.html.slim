@@ -1,6 +1,9 @@
 .panel.panel-default
   .panel-heading
     = user_signed_in? ? 'User Profile' : 'Login'
+    - if user_signed_in?
+      .pull-right
+        = link_to 'Edit Profile', edit_user_path(current_user)
   .panel-body
     - if user_signed_in?
       .row

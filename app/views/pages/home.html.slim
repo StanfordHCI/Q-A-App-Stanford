@@ -1,81 +1,75 @@
 - body_class 'room-selection-page'
 
-.btn-group.btn-breadcrumb
-  .container
-    h1.font-white.text-center Welcome to Ask me, Awesome Questions &amp; Answer
-    p.text-center.font-white Dont be shy. Ask something.
-    br
-    // .row
-    //   .col-lg-6.col-lg-offset-3.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2
-    //     form
-    //       .form-group
-    //         .inner-addon-lg.left-addon
-    //           i.glyphicon.glyphicon-search
-    //           .input-group
-    //             input#search-input.form-control.no-radius.input-lg placeholder=(" Search questions.") type="text"
-    //             span.input-group-btn
-    //               button.btn.btn-default.no-radius.theme-button-head type="button"  Search
-    //     p.text-center or
-    //     p.text-center
-    //       button.btn.btn-default.no-radius.theme-button.btn-lg Join Now
-.container
-  section
-    .row
+- content_for :page_header
+  .btn-group.btn-breadcrumb
+    .container
+      h1.font-white.text-center Welcome to Ask me, Awesome Questions &amp; Answer
+      p.text-center.font-white Dont be shy. Ask something.
       br
-      #about-admin.col-md-4
-        = render 'users/user'
-      br
-      .col-md-8
-        ul.nav.nav-tabs.home-nav
-          li.active role="presentation" 
-            a.active href="#"  Recent Questions
-          // li role="presentation" 
-          //   a href="#"  Most Responses
-          // li role="presentation" 
-          //   a href="#"  Recently Answered
-          // li role="presentation" 
-          //   a href="#"  No Answers
-        br
-        .questions-list.clearfix
-
-          - recent_questions.each do |question|
-            article.question-answer-bit
-              .row
-                .col-xs-4
-                  .image-wrap
-                    = link_to user_path(question.user) do
-                      = image_tag question.user.avatar, class: 'img-responsive img-circle'
-                .col-xs-8
-                  .content-wrap
-                    header.bit-header
-                      h1.bit-title.h3
-                        = question.title
-                    .bit-entry
-                      p
-                        = question.details
-              footer.bit-metadata
-                ul.list-unstyled
-                  // li.text-success
-                  //  i.fa.fa-check
-                  //  | Solved
-                  li
-                    i.fa.fa-clock-o
-                    |  
-                    = time_ago_in_words question.created_at 
-                    |  ago
-                  li
-                    i.fa.fa-comment
-                    |  
-                    = question.answers.count
-                    |  Answer
-                  li.list-view
-                    i.fa.fa-user.fa-1X
-                    = question.views_count
-                    |  Views
-                ul.list-unstyled.button-wrap
-                = link_to question, class: 'btn btn-primary'
-                  i.fa.fa-question
-                  span.btn-text Question
-                // button.btn.btn-default
-                //  i.fa.fa-thumbs-down
-                //  span.btn-text Report
+      // .row
+      //   .col-lg-6.col-lg-offset-3.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2
+      //     form
+      //       .form-group
+      //         .inner-addon-lg.left-addon
+      //           i.glyphicon.glyphicon-search
+      //           .input-group
+      //             input#search-input.form-control.no-radius.input-lg placeholder=(" Search questions.") type="text"
+      //             span.input-group-btn
+      //               button.btn.btn-default.no-radius.theme-button-head type="button"  Search
+      //     p.text-center or
+      //     p.text-center
+      //       button.btn.btn-default.no-radius.theme-button.btn-lg Join Now
+ul.nav.nav-tabs.home-nav
+  li.active role="presentation"
+    a.active href="#"  Recent Questions
+    // li role="presentation"
+    //   a href="#"  Most Responses
+    // li role="presentation"
+    //   a href="#"  Recently Answered
+    // li role="presentation"
+    //   a href="#"  No Answers
+  br
+.questions-list.clearfix
+  - if user_signed_in?
+    - recent_questions.each do |question|
+      article.question-answer-bit
+      .row
+        .col-xs-4
+          .image-wrap
+            = link_to user_path(question.user) do
+              = image_tag question.user.avatar, class: 'img-responsive img-circle'
+        .col-xs-8
+          .content-wrap
+            header.bit-header
+              h1.bit-title.h3
+                = question.title
+            .bit-entry
+              p
+                = question.details
+                  = question.details
+      footer.bit-metadata
+        ul.list-unstyled
+          // li.text-success
+          //  i.fa.fa-check
+          //  | Solved
+          li
+            i.fa.fa-clock-o
+            |
+            = time_ago_in_words question.created_at
+            |  ago
+          li
+            i.fa.fa-comment
+            |
+            = question.answers.count
+            |  Answer
+          li.list-view
+            i.fa.fa-user.fa-1X
+            = question.views_count
+            |  Views
+        ul.list-unstyled.button-wrap
+        = link_to question, class: 'btn btn-primary'
+          i.fa.fa-question
+          span.btn-text Question
+          // button.btn.btn-default
+          //  i.fa.fa-thumbs-down
+          //  span.btn-text Report
