@@ -1,13 +1,13 @@
 .topbar
   .container
     .pull-left
-      = link_to icon('envelope-o', 'Contact', class: 'fa-2x'), '#', class: 'mr5'
-      span.splitter= '/'
-      = link_to icon('phone', 'Support'), '#', class: 'mr5'
-      span.splitter= '/'
-      = link_to icon('user', 'Login Area'), login_path
+      // = link_to icon('envelope-o', 'Contact', class: 'fa-2x'), '#', class: 'mr5'
+      // span.splitter= '/'
+      // = link_to icon('phone', 'Support'), '#', class: 'mr5'
+      // span.splitter= '/'
+      = link_to icon('user', "#{user_signed_in? ? 'My Profile' : 'Login Area'}"), login_path
     .pull-right
-      = form_for :search do |f|
-        .search-group
-          = icon('search')
-          = f.text_field :query, class: 'search-input', placeholder: 'Search here...'
+      // = form_for :search do |f|
+      //  .search-group
+      //    = icon('search')
+      //    = f.text_field :query, class: 'search-input', placeholder: 'Search here...'
