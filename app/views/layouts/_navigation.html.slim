@@ -7,7 +7,7 @@
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand href="home.html"
+          = link_to root_url, class: 'navbar-brand' do
             = image_tag 'qa_logo.jpg'
       .col-md-10
         .navbar-collapse.collapse
@@ -17,9 +17,7 @@
             li
               = link_to 'Ask Question', new_question_path
             li
-              a href="#"  Question
-            li
-              = link_to 'User', user_path(current_user)
+              = link_to 'User', user_path(current_user) if user_signed_in?
             li
               a href="#"  Contact
         /.contact

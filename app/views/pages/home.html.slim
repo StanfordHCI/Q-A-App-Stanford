@@ -36,12 +36,12 @@
         ul.nav.nav-tabs.home-nav
           li.active role="presentation" 
             a.active href="#"  Recent Questions
-          li role="presentation" 
-            a href="#"  Most Responses
-          li role="presentation" 
-            a href="#"  Recently Answered
-          li role="presentation" 
-            a href="#"  No Answers
+          // li role="presentation" 
+          //   a href="#"  Most Responses
+          // li role="presentation" 
+          //   a href="#"  Recently Answered
+          // li role="presentation" 
+          //   a href="#"  No Answers
         br
         .questions-list.clearfix
 
@@ -62,9 +62,9 @@
                         = question.details
               footer.bit-metadata
                 ul.list-unstyled
-                  li.text-success
-                    i.fa.fa-check
-                    | Solved
+                  // li.text-success
+                  //  i.fa.fa-check
+                  //  | Solved
                   li
                     i.fa.fa-clock-o
                     |  
@@ -79,16 +79,10 @@
                     i.fa.fa-user.fa-1X
                     = question.views_count
                     |  Views
-                  li.text-warning
-                    i.fa.fa-star
-                    |  0 
-                  li
-                    i.fa.fa-folder
-                    | Html
                 ul.list-unstyled.button-wrap
                 = link_to question, class: 'btn btn-primary'
                   i.fa.fa-question
                   span.btn-text Question
-                button.btn.btn-default
-                  i.fa.fa-thumbs-down
-                  span.btn-text Report
+                // button.btn.btn-default
+                //  i.fa.fa-thumbs-down
+                //  span.btn-text Report
