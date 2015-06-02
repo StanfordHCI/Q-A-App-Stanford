@@ -2,7 +2,7 @@
   .panel-heading= user_signed_in? ? 'User Profile' : 'Login'
   .panel-body
     - if user_signed_in?
-      = link_to 'My Account', '#', class: 'btn btn-primary'
+      = link_to 'My Account', user_path(current_user), class: 'btn btn-primary'
       '
       = link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'btn btn-danger'
     - else

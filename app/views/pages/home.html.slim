@@ -28,29 +28,9 @@
 .container
   section
     .row
+      br
       #about-admin.col-md-4
         = render 'users/user'
-        .alert.alert-info
-          h3 Tags
-          ul.tags
-            li
-              a href=""  Project
-            li
-              a href=""  Portfolio
-            li
-              a href=""  UI
-            li
-              a href=""  HTML
-          ul.tags
-            li
-              a href=""  Project
-            li
-              a href=""  Portfolio
-            li
-              a href=""  UI
-            li
-              a href=""  HTML
-      br
       br
       .col-md-8
         ul.nav.nav-tabs.home-nav
@@ -64,160 +44,51 @@
             a href="#"  No Answers
         br
         .questions-list.clearfix
-          article.question-answer-bit
-            .row
-              .col-xs-4
-                .image-wrap
-                  a href="#" 
-                    img.img-responsive.img-circle src="http://placehold.it/800x800"
-              .col-xs-8
-                .content-wrap
-                  header.bit-header
-                    h1.bit-title.h3 Lorem ipsum dolor sit amet?
-                  .bit-entry
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            footer.bit-metadata
-              ul.list-unstyled
-                li.text-success
-                  i.fa.fa-check
-                  | Solved
-                li
-                  i.fa.fa-clock-o
-                  | 2 min ago
-                li
-                  i.fa.fa-comment
-                  | 2 Answer
-                li.list-view
-                  i.fa.fa-user.fa-1X
-                  | 20 Views
-                li.text-warning
-                  i.fa.fa-star
-                  | 5
-                li
-                  i.fa.fa-folder
-                  | Html
-              ul.list-unstyled.button-wrap
-              button.btn.btn-primary
-                i.fa.fa-question
-                span.btn-text Question
-              button.btn.btn-default
-                i.fa.fa-thumbs-down
-                span.btn-text Report
-          article.question-answer-bit
-            .row
-              .col-xs-4
-                .image-wrap
-                  a href="#" 
-                    img.img-responsive.img-circle src="http://placehold.it/800x800"
-              .col-xs-8
-                .content-wrap
-                  header.bit-header
-                    h1.bit-title.h3 Lorem ipsum dolor sit amet?
-                  /! /.bit-header
-                  .bit-entry
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            footer.bit-metadata
-              ul.list-unstyled
-                li.text-success
-                  i.fa.fa-check
-                  | Solved
-                li
-                  i.fa.fa-clock-o
-                  | 2 min ago
-                li
-                  i.fa.fa-comment
-                  | 2 Answer
-                li.list-view
-                  i.fa.fa-user.fa-1X
-                  | 20 Views
-                li.text-warning
-                  i.fa.fa-star
-                  | 5
-                li
-                  i.fa.fa-folder
-                  | Html
-              ul.list-unstyled.button-wrap
-              button.btn.btn-primary
-                i.fa.fa-question
-                span.btn-text Question
-              button.btn.btn-default
-                i.fa.fa-thumbs-down
-                span.btn-text Report
-          article.question-answer-bit
-            .row
-              .col-xs-4
-                .image-wrap
-                  a href="#" 
-                    img.img-responsive.img-circle src="http://placehold.it/800x800" /
-              .col-xs-8
-                .content-wrap
-                  header.bit-header
-                    h1.bit-title.h3 Lorem ipsum dolor sit amet?
-                  .bit-entry
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            footer.bit-metadata
-              ul.list-unstyled
-                li.text-success
-                  i.fa.fa-check
-                  | Solved
-                li
-                  i.fa.fa-clock-o
-                  | 2 min ago
-                li
-                  i.fa.fa-comment
-                  | 2 Answer
-                li.list-view
-                  i.fa.fa-user.fa-1X
-                  | 20 Views
-                li.text-warning
-                  i.fa.fa-star
-                  | 5
-                li
-                  i.fa.fa-folder
-                  | Html
-              ul.list-unstyled.button-wrap
-              button.btn.btn-primary
-                i.fa.fa-question
-                span.btn-text Question
-              button.btn.btn-default
-                i.fa.fa-thumbs-down
-                span.btn-text Report
-          article.question-answer-bit
-            .row
-              .col-xs-4
-                .image-wrap
-                  a href="#" 
-                    img.img-responsive.img-circle src="http://placehold.it/800x800"
-              .col-xs-8
-                .content-wrap
-                  header.bit-header
-                    h1.bit-title.h3 Lorem ipsum dolor sit amet?
-                  .bit-entry
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            footer.bit-metadata
-              ul.list-unstyled
-                li.text-success
-                  i.fa.fa-check
-                  | Solved
-                li
-                  i.fa.fa-clock-o
-                  | 2 min ago
-                li
-                  i.fa.fa-comment
-                  | 2 Answer
-                li.list-view
-                  i.fa.fa-user.fa-1X
-                  | 20 Views
-                li.text-warning
-                  i.fa.fa-star
-                  | 5
-                li
-                  i.fa.fa-folder
-                  | Html
-              ul.list-unstyled.button-wrap
-              button.btn.btn-primary
-                i.fa.fa-question
-                span.btn-text Question
-              button.btn.btn-default
-                i.fa.fa-thumbs-down
-                span.btn-text Report
+
+          - recent_questions.each do |question|
+            article.question-answer-bit
+              .row
+                .col-xs-4
+                  .image-wrap
+                    = link_to user_path(question.user) do
+                      = image_tag question.user.avatar, class: 'img-responsive img-circle'
+                .col-xs-8
+                  .content-wrap
+                    header.bit-header
+                      h1.bit-title.h3
+                        = question.title
+                    .bit-entry
+                      p
+                        = question.details
+              footer.bit-metadata
+                ul.list-unstyled
+                  li.text-success
+                    i.fa.fa-check
+                    | Solved
+                  li
+                    i.fa.fa-clock-o
+                    |  
+                    = time_ago_in_words question.created_at 
+                    |  ago
+                  li
+                    i.fa.fa-comment
+                    |  
+                    = question.answers.count
+                    |  Answer
+                  li.list-view
+                    i.fa.fa-user.fa-1X
+                    = question.views_count
+                    |  Views
+                  li.text-warning
+                    i.fa.fa-star
+                    |  0 
+                  li
+                    i.fa.fa-folder
+                    | Html
+                ul.list-unstyled.button-wrap
+                = link_to question, class: 'btn btn-primary'
+                  i.fa.fa-question
+                  span.btn-text Question
+                button.btn.btn-default
+                  i.fa.fa-thumbs-down
+                  span.btn-text Report

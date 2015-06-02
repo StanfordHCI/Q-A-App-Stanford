@@ -38,14 +38,14 @@
                     <%= f.text_field :tag_list, value: '', class: 'form-control col-sm-4 no-radius theme-form', id: 'tags', 'data-role' => 'tagsinput', required: true %>
                   </div>
                 </div>
-                <div class=" col-md-12">
+                <!-- <div class=" col-md-12">
                   <label for="category" class="col-sm-3">Category <i class="fa fa-asterisk"></i></label>
                   <div class="col-sm-8 dropdown">
-                    <%= f.select :category_id, options_from_collection_for_select(Category.all, :id, :name),{ prompt: 'Select a category' }, class: 'form-control no-radius theme-form', required: true %>
+                    <%= f.select :category_id, options_from_collection_for_select(Category.all, :id, :name),{ prompt: 'Select a category' }, class: 'form-control no-radius theme-form' %>
                     <em>Lorep Ipsum is simply dummy text</em>
                   </div>
                   <br/>
-                </div>
+                </div> -->
                 <div class=" col-md-12">
                   <label for="Poll" class="col-sm-3">Poll</label>
                   <div class="col-sm-4">
