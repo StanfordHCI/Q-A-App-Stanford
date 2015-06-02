@@ -1,14 +1,28 @@
-= form_for(:user, as: :user, url: registration_path(:user)) do |f|
+= form_for(:user, as: :user, url: registration_path(:user), remote: true, format: :json, html: {id: 'registration-form'}) do |f|
+  .form-group
+    ul.text-danger.error-messages
   .form-group
     = f.label :username, 'Username*'
-    = f.text_field :username, class: 'form-control', placeholder: 'Enter username', autofocus: true
+    = f.text_field :username, class: 'form-control', placeholder: 'Enter username', autofocus: true, required: true
   .form-group
     = f.label :email, 'E-Mail*'
-    = f.email_field :email, class: 'form-control', placeholder: 'Enter email', autofocus: true
+    = f.email_field :email, class: 'form-control', placeholder: 'Enter email', autofocus: true, required: true
   .form-group
     = f.label :password, 'Password*'
-    = f.password_field :password, autocomplete: 'off', class: 'form-control'
+    = f.password_field :password, autocomplete: 'off', class: 'form-control', required: true
   .form-group
     = f.label :password_confirmation, 'Password Confirmation*'
-    = f.password_field :password_confirmation, autocomplete: 'off', class: 'form-control'
+    = f.password_field :password_confirmation, autocomplete: 'off', class: 'form-control', required: true
   = f.submit 'Sign Up', class: 'btn btn-danger btn-block'
+
+- content_for :scripts
+  coffee:
+    $('#registration-form').submit ->
+      $('.error-messages').text('')
+
+    $('#registration-form').on 'ajax:complete', (e, data) ->
+      if data.status == 200
+        $('.error-messages').text(data.responseText)
+      else
+        for error in data.responseJSON
+          $('.error-messages').append("<li>#{error}</li>")

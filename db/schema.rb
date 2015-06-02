@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150528195138) do
+ActiveRecord::Schema.define(version: 20150531190001) do
 
   create_table "answers", force: :cascade do |t|
     t.integer  "question_id",     limit: 4
@@ -19,8 +19,9 @@ ActiveRecord::Schema.define(version: 20150528195138) do
     t.integer  "user_id",         limit: 4
     t.integer  "up_vote_count",   limit: 4
     t.integer  "down_vote_count", limit: 4
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+    t.text     "details",         limit: 65535
   end
 
   create_table "categories", force: :cascade do |t|
