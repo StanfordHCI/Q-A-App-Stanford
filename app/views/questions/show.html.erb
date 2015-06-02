@@ -39,12 +39,12 @@
                   <br><br>
                   <p><%= simple_format @question.details %></p>
                   <ul class="list question-list">
-                    <li class="text-success"><i class="fa fa-check"></i>Solved</li>
+                    <!-- <li class="text-success"><i class="fa fa-check"></i>Solved</li> -->
                     <li><i class="fa fa-clock-o"></i><%= time_ago_in_words @question.created_at %> ago</li>
                     <li><i class="fa fa-comment"></i><%= @question.answers.count %> Answer</li>
                     <li class="list-view"><i class="fa fa-user fa-1X"></i><%= @question.views_count %> Views</li>
-                    <li class="text-warning"><i class="fa fa-star"></i>0</li>
-                    <li><i class="fa fa-folder"></i>Html</li>
+                    <!-- <li class="text-warning"><i class="fa fa-star"></i>0</li>
+                    <li><i class="fa fa-folder"></i>Html</li> -->
                     <span class="pull-right">
                       <li><i class="fa fa-thumbs-o-up "></i><i class="fa fa-thumbs-o-down "></i></li>
                       <li><%= @question.up_vote_count - @question.down_vote_count %></li>

@@ -8,6 +8,7 @@ class QuestionsController < ApplicationController
 
   # GET /questions/1
   def show
+    @question.increment!(:views_count)
   end
 
   # GET /questions/new

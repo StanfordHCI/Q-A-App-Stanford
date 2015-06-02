@@ -8,12 +8,12 @@ footer#contentinfo.site-footer
         .footer-links
           ul.list-unstyled
             li
-              a href="#"  Home
+              = link_to 'Home', root_url, class: "active"
             li
-              a href="#"  Ask Question
+              = link_to 'Ask Question', new_question_path
+            li
+              = link_to 'User', user_path(current_user)
             li
               a href="#"  About
-            li
-              a href="#"  User
             li
               a href="#"  Blog
