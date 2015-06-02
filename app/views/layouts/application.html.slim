@@ -12,7 +12,9 @@ html
     = csrf_meta_tags
 
   body class=(yield :body_class)
+    = render 'layouts/topbar'
     = render 'layouts/navigation'
+    = yield :page_header
     = render 'layouts/alerts'
     = yield
     = render 'layouts/footer'

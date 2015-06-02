@@ -1,25 +1,25 @@
-.navbar.navbar-default.navbar-static-top
+nav.navbar.navbar-inverse
   .container
-    .col-md-12
-      .col-md-2
-        .navbar-header
-          button.navbar-toggle data-target=".navbar-collapse" data-toggle="collapse" type="button"
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          = link_to root_url, class: 'navbar-brand' do
-            = image_tag 'qa_logo.jpg'
-      .col-md-10
-        .navbar-collapse.collapse
-          ul.nav.navbar-nav.navbar-right
-            li
-              = link_to 'Home', root_url, class: "active"
-            li
-              = link_to 'Ask Question', new_question_path
-            li
-              = link_to 'User', user_path(current_user) if user_signed_in?
-        /.contact
-        /  ul
-        /    li
-        /      i.fa.fa-user
-        /      a href="#"  Signout
+    .navbar-header
+      button.navbar-toggle data-target=".navbar-collapse" data-toggle="collapse" type="button"
+        span.sr-only Toggle Navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      = link_to home_path, class: 'navbar-brand' do
+        = icon('question', '', class: 'fa-3x')
+        span Q&A
+    .navbar-collapse.collapse
+      ul.nav.navbar-nav.navbar-right
+        li.active
+          = link_to 'HOME', root_path
+        li
+          = link_to 'Ask Question', new_question_path
+        li
+          a href="#"  Question
+        li
+          a href="#"  User
+        li
+          a href="#"  Blog
+        li
+          a href="#"  Contact

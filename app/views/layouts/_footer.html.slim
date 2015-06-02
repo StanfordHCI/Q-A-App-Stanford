@@ -1,15 +1,27 @@
-footer#contentinfo.site-footer
-  .container
-    .row
-      .col-md-4
-        .site-info
-          p.copyright-text Copyright &copy; 2015 Q &amp; A
-      .col-md-8
-        .footer-links
-          ul.list-unstyled
-            li
-              = link_to 'Home', root_url, class: "active"
-            li
-              = link_to 'Ask Question', new_question_path
-            li
-              = link_to 'User', user_path(current_user) if user_signed_in?
+footer
+  .container.footer-info
+    .col-sm-4
+      h3 Recent Question
+      p Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+      h3 Address
+      p Nullam quis risus eget urna mollis ornare vel eu leo.
+    .col-sm-4.quick-links
+      h3 Quick Links
+      ul
+        li= link_to '- Home', home_path
+        li= link_to '- Ask Question', '#'
+        li= link_to '- About', '#'
+        li= link_to '- User', '#'
+        li= link_to '- Blog', '#'
+    .col-sm-4
+      h3 Popular Question
+      p Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+
+  .container.social-info
+    .col-sm-5 Copyright 2015 Q&A
+    .col-sm-7.text-right
+      = link_to icon('facebook'), '#'
+      = link_to icon('pinterest'), '#'
+      = link_to icon('skype'), '#'
+      = link_to icon('twitter'), '#'
+      = link_to icon('vimeo'), '#'

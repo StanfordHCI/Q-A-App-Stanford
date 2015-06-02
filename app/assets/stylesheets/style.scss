@@ -1,12 +1,8 @@
+@import "variables";
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "variables";
+@import "layout";
 @import "users";
-
-*{
-  margin: 0;
-  padding: 0;
-}
 
 a,img{
   text-decoration: none;
@@ -81,9 +77,9 @@ a,img{
 .contact li, .btn-breadcrumb a {
   display: inline;
   list-style: none;
-	background: url('/assets/li_bg.png') no-repeat center right;
-	padding: 0 8px;
-	color: #fff;
+  background: url('/assets/li_bg.png') no-repeat center right;
+  padding: 0 8px;
+  color: #fff;
 }
 .contact li:last-child, .btn-breadcrumb a:last-child{
   background: none;
@@ -861,9 +857,3 @@ select {
   border-color: rgba(black, .2) !important;
   border-width: 1px !important;
 }
-
-// Site Footer
-@import "site-footer";
-
-// Homepage
-@import "homepage";
