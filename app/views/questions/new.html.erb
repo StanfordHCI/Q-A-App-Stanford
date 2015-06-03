@@ -7,8 +7,6 @@
   <div class="alert alert-info">
     <h2>Ask Question</h2>
 
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s</p>
     <%= form_for @question, html: {class: 'ask'} do |f| %>
         <div class=" col-md-12">
           <label for="title" class="col-sm-3">Question Title <i class="fa fa-asterisk"></i></label>
@@ -25,21 +23,20 @@
           </div>
         </div>
         <!-- <div class=" col-md-12">
-                  <label for="category" class="col-sm-3">Category <i class="fa fa-asterisk"></i></label>
-                  <div class="col-sm-8 dropdown">
-                    <%= f.select :category_id, options_from_collection_for_select(Category.all, :id, :name), {prompt: 'Select a category'}, class: 'form-control no-radius theme-form' %>
-                    <em>Lorep Ipsum is simply dummy text</em>
-                  </div>
-                  <br/>
-                </div> -->
+          <label for="category" class="col-sm-3">Category <i class="fa fa-asterisk"></i></label>
+          <div class="col-sm-8 dropdown">
+            <%= f.select :category_id, options_from_collection_for_select(Category.all, :id, :name), {prompt: 'Select a category'}, class: 'form-control no-radius theme-form' %>
+            <em>Lorep Ipsum is simply dummy text</em>
+          </div>
+          <br/>
+        </div>
         <div class=" col-md-12">
           <label for="Poll" class="col-sm-3">Poll</label>
 
           <div class="col-sm-4">
             <%= f.check_box :is_poll, id: 'poll', placeholder: 'Poll' %> This question is a poll?
           </div>
-          <div class="col-sm-5">Lorep Ipsum is simply dummy text</div>
-        </div>
+        </div> -->
 
         <div class=" col-md-12">
           <label for="details" class="col-sm-3">Details <i class="fa fa-asterisk"></i></label>
