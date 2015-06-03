@@ -11,7 +11,11 @@
 
         <!--Buttons for larger screen-->
         <div class="pull-left">
-          <h2 style="border: 0"><b><%= @question.title %></b></h2>
+          <%= link_to user_path(@question.user), class: 'pull-left col-md-2' do %>
+            <h3 style="border:0px"><%= @question.user.first_name %></h3>
+            <%= image_tag @question.user.avatar.url, class: 'img-rounded img-responsive img-circle', alt: 'profile' %>
+          <% end %>
+          <h2 style="border: 0; margin-left: 100px;"><b><%= @question.title %></b></h2>
         </div>
         <div class="pull-right">
           <a href="#" class="btn btn-social btn-facebook" onclick="scrollToElement('#answer_div', 600);">
@@ -27,11 +31,11 @@
           <li><i class="fa fa-comment"></i><%= @question.answers.count %> Answer</li>
           <li class="list-view"><i class="fa fa-user fa-1X"></i><%= @question.views_count %> Views</li>
           <!-- <li class="text-warning"><i class="fa fa-star"></i>0</li>
-          <li><i class="fa fa-folder"></i>Html</li> -->
-                    <span class="pull-right">
-                      <li><i class="fa fa-thumbs-o-up "></i><i class="fa fa-thumbs-o-down "></i></li>
-                      <li><%= @question.up_vote_count - @question.down_vote_count %></li>
-                    </span>
+          <li><i class="fa fa-folder"></i>Html</li>
+          <span class="pull-right">
+            <li><i class="fa fa-thumbs-o-up "></i><i class="fa fa-thumbs-o-down "></i></li>
+            <li><%= @question.up_vote_count - @question.down_vote_count %></li>
+          </span> -->
         </ul>
 
         <!--Buttons for smaller screen-->
@@ -47,35 +51,35 @@
       <h2>Answers(<%= @question.answers.count %>)</h2>
 
       <% @question.answers.each do |answer| %>
-          <div>
-            <%= link_to user_path(answer.user), class: 'pull-left col-md-2' do %>
-                <br>
-                <%= image_tag answer.user.avatar.url, class: 'img-rounded img-responsive img-circle', alt: 'profile' %>
-            <% end %>
-            <div class="media-body">
-              <br><br>
-
-              <h3 style="border:0px"><%= answer.user.first_name %></h3>
-
-              <div class="pull-left col-md-12">
-                        <span class="col-md-1">
-                          <i class="fa fa-chevron-up"></i>
-                          <i class="fa fa-chevron-down"></i>
-                        </span>
-                <span class="col-md-1"><%= answer.up_vote_count - answer.down_vote_count %></span>
-                <span class="col-md-7"><i class="fa fa-clock-o"></i> <%= answer.created_at.strftime("%B %d, %Y at %l:%M %p") %></span>
-              </div>
+        <div>
+          <%= link_to user_path(answer.user), class: 'pull-left col-md-2' do %>
               <br>
+              <%= image_tag answer.user.avatar.url, class: 'img-rounded img-responsive img-circle', alt: 'profile' %>
+          <% end %>
+          <div class="media-body">
+            <br><br>
 
-              <p><%= simple_format answer.details %></p>
-              <br>
-              <ul class="list question-list">
-                <!-- <li class="text-success"><i class="fa fa-check"></i>Best Answer</li> -->
-                <h2 class="col-md-10"></h2>
-              </ul>
-              <br>
+            <h3 style="border:0px"><%= link_to answer.user.first_name, user_path(answer.user) %></h3>
+
+            <div class="pull-left col-md-12">
+              <!-- <span class="col-md-1">
+                <i class="fa fa-chevron-up"></i>
+                <i class="fa fa-chevron-down"></i>
+              </span>
+              <span class="col-md-1"><%= answer.up_vote_count - answer.down_vote_count %></span> -->
+              <span class="col-md-7"><i class="fa fa-clock-o"></i> <%= answer.created_at.strftime("%B %d, %Y at %l:%M %p") %></span>
             </div>
+            <br>
+
+            <p><%= simple_format answer.details %></p>
+            <br>
+            <ul class="list question-list">
+              <!-- <li class="text-success"><i class="fa fa-check"></i>Best Answer</li> -->
+              <h2 class="col-md-10"></h2>
+            </ul>
+            <br>
           </div>
+        </div>
       <% end %>
 
       <div class="col-md-12" id="answer_div">
