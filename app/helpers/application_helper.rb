@@ -8,4 +8,9 @@ module ApplicationHelper
     Question.order('created_at DESC').limit(5)
   end
 
+  def active_nav(paths)
+    paths = [paths] if paths.is_a? String
+    'active' if paths.any? { |path| current_page?(path) }
+  end
+
 end

@@ -37,6 +37,7 @@ ul.nav.nav-tabs.home-nav
         .image-wrap
           = link_to user_path(question.user) do
             = image_tag question.user.avatar, class: 'img-responsive img-circle'
+            = question.user.username
       .col-xs-8
         .content-wrap
           header.bit-header
