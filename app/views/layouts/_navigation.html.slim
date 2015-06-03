@@ -11,9 +11,9 @@ nav.navbar.navbar-inverse
         span Q&A
     .navbar-collapse.collapse
       ul.nav.navbar-nav.navbar-right
-        li.active
+        li class=(active_nav([root_path, home_path]))
           = link_to 'HOME', root_path
-        li
+        li class=(active_nav(new_question_path))
           = link_to 'Ask Question', new_question_path
         // li
         //  a href="#"  Question

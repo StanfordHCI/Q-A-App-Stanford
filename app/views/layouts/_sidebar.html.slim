@@ -13,11 +13,15 @@
         .col-md-8
           ul.q_list
             li
-              | No of question asked
-              span= current_user.questions.count
+              - if current_user.question_count > 0
+                span= "#{current_user.question_count} of #{'question'.pluralize(current_user.question_count)} asked"
+              - else
+                | No of question asked
             li
-              | No of question responded
-              span= current_user.answers.count
+              - if current_user.answer_count > 0
+                span= "#{current_user.answer_count} of #{'answer'.pluralize(current_user.answer_count)} asked"
+              - else
+                | No of question responded
       = link_to 'My Account', user_path(current_user), class: 'btn btn-primary'
       '
       = link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'btn btn-danger'
