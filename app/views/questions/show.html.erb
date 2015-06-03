@@ -1,6 +1,6 @@
 <%= content_for :styles do %>
-    <!-- TAGSINPUT STYLE CSS -->
-    <link href="/assets/bootstrap-tagsinput.min.css" rel="stylesheet"/>
+  <!-- TAGSINPUT STYLE CSS -->
+  <%= stylesheet_link_tag 'bootstrap-tagsinput.min' %>
 <% end %>
 
 <div class="col-md-12" id="about-admin">
@@ -11,8 +11,8 @@
 
         <!--Buttons for larger screen-->
         <div class="pull-left">
-          <%= link_to user_path(@question.user), class: 'pull-left col-md-2' do %>
-            <h3 style="border:0px"><%= @question.user.first_name %></h3>
+          <%= link_to user_path(@question.user), class: 'pull-left col-xs-3' do %>
+            <h3 style="border:0px"><%= @question.user.username %></h3>
             <%= image_tag @question.user.avatar.url, class: 'img-rounded img-responsive img-circle', alt: 'profile' %>
           <% end %>
           <h2 style="border: 0; margin-left: 100px;"><b><%= @question.title %></b></h2>
@@ -59,7 +59,7 @@
           <div class="media-body">
             <br><br>
 
-            <h3 style="border:0px"><%= link_to answer.user.first_name, user_path(answer.user) %></h3>
+            <h3 style="border:0px"><%= link_to answer.user.username, user_path(answer.user) %></h3>
 
             <div class="pull-left col-md-12">
               <!-- <span class="col-md-1">
@@ -108,8 +108,8 @@
 </div>
 
 <%= content_for :scripts do %>
-    <!-- REQUIRED BOOTSTRAP TAGINPUT SCRIPTS -->
-    <script src="/assets/bootstrap-tagsinput.min.js"></script>
-    <!-- REQUIRED BOOTSTRAP FILEINPUT SCRIPTS -->
-    <script src="/assets/bootstrap-filestyle.min.js"></script>
+  <!-- REQUIRED BOOTSTRAP TAGINPUT SCRIPTS -->
+  <%= javascript_include_tag 'bootstrap-tagsinput.min' %>
+  <!-- REQUIRED BOOTSTRAP FILEINPUT SCRIPTS -->
+  <%= javascript_include_tag 'bootstrap-filestyle.min' %>
 <% end %>
