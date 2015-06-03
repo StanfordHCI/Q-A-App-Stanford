@@ -30,4 +30,12 @@ class User < ActiveRecord::Base
     @login || self.username || self.email
   end
 
+  def question_count
+    questions.count
+  end
+
+  def answer_count
+    answers.count
+  end
+
 end
