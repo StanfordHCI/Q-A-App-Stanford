@@ -1,0 +1,367 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="User Questions List">
+	<meta name="author" content="Peter">
+	<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<![endif]-->
+	<title>Questions about &ldquo;&ltpulled from backend&gt;&rdquo;</title>
+	  
+	<!-- BOOTSTRAP STYLE SHEET -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+	<!-- FONT-AWESOME STYLE SHEET FOR BEAUTIFUL ICONS -->
+	<link href="assets/css/font-awesome.css" rel="stylesheet">
+	<!-- CUSTOM STYLE CSS -->
+	<link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    body{
+      background-color: #eee;
+    } 
+    #search-heading
+    {
+      color: #FFF;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      line-height: 1.1em;
+    }
+    #search-form input
+    {
+      display: block;
+      margin: 0 auto 10px;
+      font-size: 2.5em;
+      padding-left: 1em;
+    }
+    .questions-list{
+      padding: 40px 0;
+    }
+    .questions-list article
+    {
+      clear: both;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .questions-list h1{
+      text-transform: uppercase;
+      font-family: sans-serif;
+      font-size: 1.8em;
+    }
+    .questions-list footer{
+      background-color: #FFF;
+    }
+    .question-answer-bit{
+      background: #FFF;
+      padding-top: 20px;
+      font-size: 1.2em;
+    }
+    .bit-metadata{
+      border: none;
+    }
+    .bit-metadata ul{
+      float: right;
+      clear: right;
+    }
+    .bit-metadata li{
+      float: left;
+      padding-right: 20px;
+    }
+  </style>
+</head>
+
+<body>
+	<div class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="col-md-12">
+				<div class="col-md-2">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<a class="navbar-brand" href="home.html"><img src="assets/img/qa_logo.jpg" alt="Q &amp; A"></a>
+					</div>
+				</div>
+				
+				<div class="col-md-10">
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav ">
+							<li><a href="home.html">HOME</a></li>
+							<li><a href="ask-question.html">Ask Question</a></li>
+							<li><a href="single-question.html">Question</a></li>
+							<li><a href="user-questions.html">User</a></li>
+						</ul>
+					</div>
+					<div class="contact">
+						<ul>
+							<li><i class="fa fa-user"></i>
+								<a href="user-questions.html#">Signout</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- NAVBAR CODE END -->
+
+    <div class="btn-breadcrumb">
+      <div class="container">
+      <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+        <h1 id="search-heading">Questions about</h1>
+        <form name="search-form" id="search-form" method="get">
+          <input type="text" name="search-input" id="search-input" placeholder="Search string from backend">
+        </form>
+      </div>
+      </div>
+    </div>
+	  <section class="container">
+     <div class="questions-list">
+       <article class="question-answer-bit">
+         <div class="row">
+           <div class="col-xs-2 col-xs-offset-1">
+             <div class="image-wrap">
+               <a href="single-question.html">
+                 <img src="http://placehold.it/800x800" class="img-responsive img-circle">
+               </a>
+             </div><!-- /.image-wrap -->
+           </div>
+
+           <div class="col-xs-8">
+             <div class="content-wrap">
+               <header class="bit-header">
+                 <h1 class="bit-title h3"><a href="single-question.html">Lorem ipsum dolor sit amet?</a></h1>
+               </header><!-- /.bit-header -->
+
+               <div class="bit-entry">
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+               </div><!-- /.bit-entry -->
+             </div><!-- /.content-wrap -->
+           </div>
+         </div><!-- /.row -->
+
+         <footer class="bit-metadata">
+           <ul class="list-unstyled">
+             <li class="text-success"><i class="fa fa-check"></i>Solved</li>
+             <li><i class="fa fa-clock-o"></i>2 min ago</li>
+             <li><i class="fa fa-comment"></i>2 Answer</li>
+             <li class="list-view"><i class="fa fa-user fa-1X"></i>20 Views</li>
+             <li class="text-warning"><i class="fa fa-star"></i>5</li>
+             <li><i class="fa fa-folder"></i>Html</li>
+           </ul>
+
+           <ul class="list-unstyled button-wrap">
+             <a href="single-question.html">
+               <button class="btn btn-primary">
+                 <i class="fa fa-question"></i>
+                 <span class="btn-text">Question</span>
+               </button>
+             </a>
+
+             <button class="btn btn-default">
+               <i class="fa fa-thumbs-down"></i>
+               <span class="btn-text">Report</span>
+             </button>
+           </ul>
+         </footer><!-- /.bit-metadata -->
+       </article><!-- /.question -->
+        <article class="question-answer-bit">
+         <div class="row">
+           <div class="col-xs-2 col-xs-offset-1">
+             <div class="image-wrap">
+               <a href="single-question.html">
+                 <img src="http://placehold.it/800x800" class="img-responsive img-circle">
+               </a>
+             </div><!-- /.image-wrap -->
+           </div>
+
+           <div class="col-xs-8">
+             <div class="content-wrap">
+               <header class="bit-header">
+                 <h1 class="bit-title h3"><a href="single-question.html">Lorem ipsum dolor sit amet?</a></h1>
+               </header><!-- /.bit-header -->
+
+               <div class="bit-entry">
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+               </div><!-- /.bit-entry -->
+             </div><!-- /.content-wrap -->
+           </div>
+         </div><!-- /.row -->
+
+         <footer class="bit-metadata">
+           <ul class="list-unstyled">
+             <li class="text-success"><i class="fa fa-check"></i>Solved</li>
+             <li><i class="fa fa-clock-o"></i>2 min ago</li>
+             <li><i class="fa fa-comment"></i>2 Answer</li>
+             <li class="list-view"><i class="fa fa-user fa-1X"></i>20 Views</li>
+             <li class="text-warning"><i class="fa fa-star"></i>5</li>
+             <li><i class="fa fa-folder"></i>Html</li>
+           </ul>
+
+           <ul class="list-unstyled button-wrap">
+             <a href="single-question.html">
+               <button class="btn btn-primary">
+                 <i class="fa fa-question"></i>
+                 <span class="btn-text">Question</span>
+               </button>
+             </a>
+
+             <button class="btn btn-default">
+               <i class="fa fa-thumbs-down"></i>
+               <span class="btn-text">Report</span>
+             </button>
+           </ul>
+         </footer><!-- /.bit-metadata -->
+       </article><!-- /.question -->
+       <article class="question-answer-bit">
+         <div class="row">
+           <div class="col-xs-2 col-xs-offset-1">
+             <div class="image-wrap">
+               <a href="single-question.html">
+                 <img src="http://placehold.it/800x800" class="img-responsive img-circle">
+               </a>
+             </div><!-- /.image-wrap -->
+           </div>
+
+           <div class="col-xs-8">
+             <div class="content-wrap">
+               <header class="bit-header">
+                 <h1 class="bit-title h3"><a href="single-question.html">Lorem ipsum dolor sit amet?</a></h1>
+               </header><!-- /.bit-header -->
+
+               <div class="bit-entry">
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+               </div><!-- /.bit-entry -->
+             </div><!-- /.content-wrap -->
+           </div>
+         </div><!-- /.row -->
+
+         <footer class="bit-metadata">
+           <ul class="list-unstyled">
+             <li class="text-success"><i class="fa fa-check"></i>Solved</li>
+             <li><i class="fa fa-clock-o"></i>2 min ago</li>
+             <li><i class="fa fa-comment"></i>2 Answer</li>
+             <li class="list-view"><i class="fa fa-user fa-1X"></i>20 Views</li>
+             <li class="text-warning"><i class="fa fa-star"></i>5</li>
+             <li><i class="fa fa-folder"></i>Html</li>
+           </ul>
+
+           <ul class="list-unstyled button-wrap">
+             <a href="single-question.html">
+               <button class="btn btn-primary">
+                 <i class="fa fa-question"></i>
+                 <span class="btn-text">Question</span>
+               </button>
+             </a>
+
+             <button class="btn btn-default">
+               <i class="fa fa-thumbs-down"></i>
+               <span class="btn-text">Report</span>
+             </button>
+           </ul>
+         </footer><!-- /.bit-metadata -->
+       </article><!-- /.question -->
+        <article class="question-answer-bit">
+         <div class="row">
+           <div class="col-xs-2 col-xs-offset-1">
+             <div class="image-wrap">
+               <a href="single-question.html">
+                 <img src="http://placehold.it/800x800" class="img-responsive img-circle">
+               </a>
+             </div><!-- /.image-wrap -->
+           </div>
+
+           <div class="col-xs-8">
+             <div class="content-wrap">
+               <header class="bit-header">
+                 <h1 class="bit-title h3"><a href="single-question.html">Lorem ipsum dolor sit amet?</a></h1>
+               </header><!-- /.bit-header -->
+
+               <div class="bit-entry">
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+               </div><!-- /.bit-entry -->
+             </div><!-- /.content-wrap -->
+           </div>
+         </div><!-- /.row -->
+
+         <footer class="bit-metadata">
+           <ul class="list-unstyled">
+             <li class="text-success"><i class="fa fa-check"></i>Solved</li>
+             <li><i class="fa fa-clock-o"></i>2 min ago</li>
+             <li><i class="fa fa-comment"></i>2 Answer</li>
+             <li class="list-view"><i class="fa fa-user fa-1X"></i>20 Views</li>
+             <li class="text-warning"><i class="fa fa-star"></i>5</li>
+             <li><i class="fa fa-folder"></i>Html</li>
+           </ul>
+
+           <ul class="list-unstyled button-wrap">
+             <a href="single-question.html">
+               <button class="btn btn-primary">
+                 <i class="fa fa-question"></i>
+                 <span class="btn-text">Question</span>
+               </button>
+             </a>
+
+             <button class="btn btn-default">
+               <i class="fa fa-thumbs-down"></i>
+               <span class="btn-text">Report</span>
+             </button>
+           </ul>
+         </footer><!-- /.bit-metadata -->
+       </article><!-- /.question -->
+   </div>
+    <div data-example-id="simple-pagination" class="bs-example">
+      <nav>
+        <ul class="pagination">
+          <li><a aria-label="Previous" href="#"><span aria-hidden="true">«</span></a></li>
+          <li><a href="#" class="current">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">...</a></li>
+          <li><a aria-label="Next" href="#"><span aria-hidden="true">»</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+	<footer id="contentinfo" class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="site-info">
+						<p class="copyright-text">Copyright &copy; 2015 Q &amp; A</p><!-- /.copyright-text -->
+					</div><!-- /.site-info -->
+				</div>
+
+				<div class="col-md-8">
+					<div class="footer-links">
+						<ul class="list-unstyled">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Ask Question</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">User</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+					</div><!-- /.footer-links -->
+				</div>
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</div><!-- /#contentinfo .site-footer -->
+
+	<!-- CONATINER END -->
+
+	<!-- REQUIRED SCRIPTS FILES -->
+	<!-- CORE JQUERY FILE -->
+	<script src="assets/js/jquery-1.11.1.js"></script>
+	<!-- REQUIRED BOOTSTRAP SCRIPTS -->
+	<script src="assets/js/bootstrap.js"></script>
+
+</body>
+</html>

@@ -14,16 +14,6 @@
 	<!-- FONT-AWESOME STYLE SHEET FOR BEAUTIFUL ICONS -->
 	<link href="assets/css/font-awesome.css" rel="stylesheet" />
 	<!-- CUSTOM STYLE CSS -->
-	<style>
-		.container .q-btn-home {
-			background: #e06666;
-			border: 2px solid #000000;
-			box-shadow: 2px 3px 1px #000000;
-			color: #ffffff;
-			display: inline;
-			padding: 5px 25px;
-		}
-	</style>
 </head>
 
 <body class="homepage">
@@ -72,16 +62,16 @@
 
 			<div class="row">
 				<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-					<form>
+					<form action="get">
 						<div class="form-group">
 							<div class="inner-addon-lg left-addon">
 								<i class="glyphicon glyphicon-search"></i>
 								
 								<div class="input-group">
-									<input type="text" class="form-control no-radius input-lg" id="ask-input" placeholder=" Ask a question">
+									<input type="text" class="form-control no-radius input-lg" name="ask-input" id="ask-input" placeholder=" Ask a question">
 
 									<span class="input-group-btn">
-										<button class="btn btn-default no-radius theme-button-head" type="button">&nbsp;Ask&nbsp;</button>
+										<button class="btn btn-default no-radius theme-button-head" formaction="ask-question.html" type="submit">&nbsp;Ask&nbsp;</button>
 									</span>
 								</div>
 							</div>
@@ -92,10 +82,10 @@
 								<i class="glyphicon glyphicon-search"></i>
 
 								<div class="input-group">
-									<input type="text" class="form-control no-radius input-lg" id="search-input" placeholder=" Search questions.">
+									<input type="text" class="form-control no-radius input-lg" name="search-input" id="search-input" placeholder=" Search questions.">
 
 									<span class="input-group-btn">
-										<button class="btn btn-default no-radius theme-button-head" type="button">Search</button>
+										<button class="btn btn-default no-radius theme-button-head" formaction="search-results.html" type="submit">Search</button>
 									</span>
 								</div>
 							</div>
@@ -105,7 +95,7 @@
 					<p class="text-center">or</p>
 
 					<p class="text-center">
-						<button class="btn btn-default no-radius theme-button btn-lg">Join Now</button>
+						<button class="btn btn-default no-radius theme-button btn-lg"><a href="register.html">Join Now</a></button>
 					</p>
 				</div>
 			</div>
@@ -150,17 +140,17 @@
 					<div class="alert alert-info">
 						<h3>Tags</h3>
 						<ul class="tags">
-							<li><a href="">Project</a></li>
-							<li><a href="">Portfolio</a></li>
-							<li><a href="">UI</a></li>
-							<li><a href="">HTML</a></li>
+							<li><a href="search-results.html?search-input=project">Project</a></li>
+							<li><a href="search-results.html?search-input=portfolio">Portfolio</a></li>
+							<li><a href="search-results.html?search-input=UI">UI</a></li>
+							<li><a href="search-results.html?search-input=HTML">HTML</a></li>
 						</ul>
 
 						<ul class="tags">
-							<li><a href="">Project</a></li>
-							<li><a href="">Portfolio</a></li>
-							<li><a href="">UI</a></li>
-							<li><a href="">HTML</a></li>
+							<li><a href="search-results.html?search-input=project">>Project</a></li>
+							<li><a href="search-results.html?search-input=portfolio">Portfolio</a></li>
+							<li><a href="search-results.html?search-input=UI">UI</a></li>
+							<li><a href="search-results.html?search-input=HTML">HTML</a></li>
 						</ul>
 					</div>
 				</div>
@@ -183,7 +173,7 @@
 							<div class="row">
 								<div class="col-xs-4">
 									<div class="image-wrap">
-										<a href="#">
+										<a href="single-question.html">
 											<img src="http://placehold.it/800x800" class="img-responsive img-circle">
 										</a>
 									</div><!-- /.image-wrap -->
@@ -192,7 +182,7 @@
 								<div class="col-xs-8">
 									<div class="content-wrap">
 										<header class="bit-header">
-											<h1 class="bit-title h3">Lorem ipsum dolor sit amet?</h1>
+											<h1 class="bit-title h3"><a href="single-question.html">Lorem ipsum dolor sit amet?</a></h1>
 										</header><!-- /.bit-header -->
 
 										<div class="bit-entry">
@@ -213,10 +203,12 @@
 								</ul>
 
 								<ul class="list-unstyled button-wrap">
-									<button class="btn btn-primary">
-										<i class="fa fa-question"></i>
-										<span class="btn-text">Question</span>
-									</button>
+                  <a href="single-question.html">
+                    <button class="btn btn-primary">
+                      <i class="fa fa-question"></i>
+                      <span class="btn-text">Question</span>
+                    </button>
+                  </a>
 
 									<button class="btn btn-default">
 										<i class="fa fa-thumbs-down"></i>
@@ -230,7 +222,7 @@
 							<div class="row">
 								<div class="col-xs-4">
 									<div class="image-wrap">
-										<a href="#">
+										<a href="single-question.html">
 											<img src="http://placehold.it/800x800" class="img-responsive img-circle">
 										</a>
 									</div><!-- /.image-wrap -->
@@ -239,7 +231,7 @@
 								<div class="col-xs-8">
 									<div class="content-wrap">
 										<header class="bit-header">
-											<h1 class="bit-title h3">Lorem ipsum dolor sit amet?</h1>
+											<h1 class="bit-title h3"><a href="single-question.html">Lorem ipsum dolor sit amet?</a></h1>
 										</header><!-- /.bit-header -->
 
 										<div class="bit-entry">
@@ -260,10 +252,12 @@
 								</ul>
 
 								<ul class="list-unstyled button-wrap">
-									<button class="btn btn-primary">
-										<i class="fa fa-question"></i>
-										<span class="btn-text">Question</span>
-									</button>
+                  <a href="single-question.html">
+                    <button class="btn btn-primary">
+                      <i class="fa fa-question"></i>
+                      <span class="btn-text">Question</span>
+                    </button>
+                  </a>
 
 									<button class="btn btn-default">
 										<i class="fa fa-thumbs-down"></i>
@@ -277,7 +271,7 @@
 							<div class="row">
 								<div class="col-xs-4">
 									<div class="image-wrap">
-										<a href="#">
+										<a href="single-question.html">
 											<img src="http://placehold.it/800x800" class="img-responsive img-circle">
 										</a>
 									</div><!-- /.image-wrap -->
@@ -286,7 +280,7 @@
 								<div class="col-xs-8">
 									<div class="content-wrap">
 										<header class="bit-header">
-											<h1 class="bit-title h3">Lorem ipsum dolor sit amet?</h1>
+											<h1 class="bit-title h3"><a href="single-question.html">Lorem ipsum dolor sit amet?</a></h1>
 										</header><!-- /.bit-header -->
 
 										<div class="bit-entry">
@@ -307,10 +301,12 @@
 								</ul>
 
 								<ul class="list-unstyled button-wrap">
-									<button class="btn btn-primary">
-										<i class="fa fa-question"></i>
-										<span class="btn-text">Question</span>
-									</button>
+                  <a href="single-question.html">
+                    <button class="btn btn-primary">
+                      <i class="fa fa-question"></i>
+                      <span class="btn-text">Question</span>
+                    </button>
+                  </a>
 
 									<button class="btn btn-default">
 										<i class="fa fa-thumbs-down"></i>
@@ -324,7 +320,7 @@
 							<div class="row">
 								<div class="col-xs-4">
 									<div class="image-wrap">
-										<a href="#">
+										<a href="single-question.html">
 											<img src="http://placehold.it/800x800" class="img-responsive img-circle">
 										</a>
 									</div><!-- /.image-wrap -->
@@ -333,7 +329,7 @@
 								<div class="col-xs-8">
 									<div class="content-wrap">
 										<header class="bit-header">
-											<h1 class="bit-title h3">Lorem ipsum dolor sit amet?</h1>
+											<h1 class="bit-title h3"><a href="single-question.html">Lorem ipsum dolor sit amet?</a></h1>
 										</header><!-- /.bit-header -->
 
 										<div class="bit-entry">
@@ -354,10 +350,12 @@
 								</ul>
 
 								<ul class="list-unstyled button-wrap">
-									<button class="btn btn-primary">
-										<i class="fa fa-question"></i>
-										<span class="btn-text">Question</span>
-									</button>
+                  <a href="single-question.html">
+                    <button class="btn btn-primary">
+                      <i class="fa fa-question"></i>
+                      <span class="btn-text">Question</span>
+                    </button>
+                  </a>
 
 									<button class="btn btn-default">
 										<i class="fa fa-thumbs-down"></i>
@@ -384,9 +382,9 @@
 				<div class="col-md-8">
 					<div class="footer-links">
 						<ul class="list-unstyled">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Ask Question</a></li>
-							<li><a href="#">About</a></li>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="single-question.html">Ask Question</a></li>
+							<li><a href="">About</a></li>
 							<li><a href="#">User</a></li>
 							<li><a href="#">Blog</a></li>
 						</ul>
